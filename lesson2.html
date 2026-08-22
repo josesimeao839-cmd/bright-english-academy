@@ -1,0 +1,1404 @@
+# lesson2.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Lesson 2 - The Alphabet | Bright English Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .lesson-container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .lesson-card {
+            background: white;
+            margin: 25px 0;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            text-align: left;
+        }
+
+        .lesson-card h3 {
+            color: #0b4f9c;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .lesson-card h4 {
+            color: #0b4f9c;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .alphabet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .letter {
+            background: #f5f9ff;
+            border: 2px solid #d9e8f7;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .letter span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+            margin-top: 7px;
+            color: #555;
+        }
+
+        .pronunciation {
+            background: #fff8d6;
+            padding: 15px;
+            border-left: 5px solid #ffd43b;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .example {
+            background: #eef6ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .translation {
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .dialogue {
+            background: #f5f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            line-height: 1.9;
+        }
+
+        .exercise {
+            background: #f5f9ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .exercise input,
+        .exercise select {
+            padding: 10px;
+            margin: 7px 0;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .question {
+            margin: 25px 0;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .score-box {
+            background: #0b4f9c;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .tip {
+            background: #e9f7ef;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .info-box {
+            background: #fff8d6;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .checklist {
+            line-height: 2;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 700px) {
+
+            .lesson-card {
+                padding: 20px;
+            }
+
+            .alphabet-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        Bright English Academy
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="#lesson">
+            Lesson
+        </a>
+
+        <a href="#alphabet">
+            Alphabet
+        </a>
+
+        <a href="#practice">
+            Practice
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <h1>
+            Lesson 2
+        </h1>
+
+        <h2>
+            The Alphabet
+        </h2>
+
+        <p>
+            Learn the 26 letters of the English alphabet and practice their pronunciation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="lesson" class="section">
+
+<div class="lesson-container">
+
+
+<!-- OBJECTIVES -->
+
+<div class="lesson-card">
+
+    <h3>
+        🎯 Lesson Objectives
+    </h3>
+
+    <p>
+        By the end of this lesson, you will be able to:
+    </p>
+
+    <ul class="checklist">
+
+        <li>
+            Recognize the 26 letters of the English alphabet.
+        </li>
+
+        <li>
+            Say the letters correctly.
+        </li>
+
+        <li>
+            Spell simple words.
+        </li>
+
+        <li>
+            Ask someone to spell a word.
+        </li>
+
+        <li>
+            Give your name letter by letter.
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- ALPHABET -->
+
+<div id="alphabet" class="lesson-card">
+
+    <h3>
+        🔤 1. The English Alphabet
+    </h3>
+
+    <p>
+        The English alphabet has <strong>26 letters</strong>.
+    </p>
+
+
+    <div class="alphabet-grid">
+
+        <div class="letter">A<span>ay</span></div>
+        <div class="letter">B<span>bee</span></div>
+        <div class="letter">C<span>see</span></div>
+        <div class="letter">D<span>dee</span></div>
+        <div class="letter">E<span>ee</span></div>
+        <div class="letter">F<span>ef</span></div>
+        <div class="letter">G<span>jee</span></div>
+        <div class="letter">H<span>aitch</span></div>
+        <div class="letter">I<span>eye</span></div>
+        <div class="letter">J<span>jay</span></div>
+        <div class="letter">K<span>kay</span></div>
+        <div class="letter">L<span>el</span></div>
+        <div class="letter">M<span>em</span></div>
+        <div class="letter">N<span>en</span></div>
+        <div class="letter">O<span>oh</span></div>
+        <div class="letter">P<span>pee</span></div>
+        <div class="letter">Q<span>cue</span></div>
+        <div class="letter">R<span>ar</span></div>
+        <div class="letter">S<span>ess</span></div>
+        <div class="letter">T<span>tee</span></div>
+        <div class="letter">U<span>you</span></div>
+        <div class="letter">V<span>vee</span></div>
+        <div class="letter">W<span>double-you</span></div>
+        <div class="letter">X<span>ex</span></div>
+        <div class="letter">Y<span>why</span></div>
+        <div class="letter">Z<span>zee</span></div>
+
+    </div>
+
+
+    <div class="tip">
+
+        💡 <strong>Tip:</strong>
+
+        Practice saying the alphabet from A to Z every day.
+
+    </div>
+
+</div>
+
+
+<!-- PRONUNCIATION -->
+
+<div class="lesson-card">
+
+    <h3>
+        🔊 2. Letter Pronunciation
+    </h3>
+
+    <p>
+        Read each letter aloud.
+    </p>
+
+
+    <div class="pronunciation">
+        <strong>A</strong> → ay
+    </div>
+
+    <div class="pronunciation">
+        <strong>B</strong> → bee
+    </div>
+
+    <div class="pronunciation">
+        <strong>C</strong> → see
+    </div>
+
+    <div class="pronunciation">
+        <strong>D</strong> → dee
+    </div>
+
+    <div class="pronunciation">
+        <strong>E</strong> → ee
+    </div>
+
+    <div class="pronunciation">
+        <strong>G</strong> → jee
+    </div>
+
+    <div class="pronunciation">
+        <strong>H</strong> → aitch
+    </div>
+
+    <div class="pronunciation">
+        <strong>I</strong> → eye
+    </div>
+
+    <div class="pronunciation">
+        <strong>J</strong> → jay
+    </div>
+
+    <div class="pronunciation">
+        <strong>U</strong> → you
+    </div>
+
+    <div class="pronunciation">
+        <strong>W</strong> → double-you
+    </div>
+
+    <div class="pronunciation">
+        <strong>Y</strong> → why
+    </div>
+
+    <div class="pronunciation">
+        <strong>Z</strong> → zee
+    </div>
+
+
+    <div class="info-box">
+
+        <strong>Important:</strong>
+
+        <p>
+            In American English, Z is commonly pronounced
+            <strong>"zee"</strong>.
+        </p>
+
+        <p>
+            In British English, Z is commonly pronounced
+            <strong>"zed"</strong>.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- SPELLING -->
+
+<div class="lesson-card">
+
+    <h3>
+        ✏️ 3. Spelling
+    </h3>
+
+    <p>
+        Spelling means saying the letters of a word one by one.
+    </p>
+
+
+    <div class="example">
+
+        <strong>
+            CAT
+        </strong>
+
+        <p>
+            C → A → T
+        </p>
+
+        <div class="translation">
+            see → ay → tee
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            BOOK
+        </strong>
+
+        <p>
+            B → O → O → K
+        </p>
+
+        <div class="translation">
+            bee → oh → oh → kay
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            SCHOOL
+        </strong>
+
+        <p>
+            S → C → H → O → O → L
+        </p>
+
+    </div>
+
+
+    <div class="tip">
+
+        💡 <strong>Tip:</strong>
+
+        Spell your name aloud every day.
+
+    </div>
+
+</div>
+
+
+<!-- USEFUL EXPRESSIONS -->
+
+<div class="lesson-card">
+
+    <h3>
+        💬 4. Useful Expressions
+    </h3>
+
+
+    <div class="example">
+
+        <strong>
+            How do you spell your name?
+        </strong>
+
+        <div class="translation">
+            Como se soletra o seu nome?
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            How do you spell it?
+        </strong>
+
+        <div class="translation">
+            Como se soletra isso?
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            My name is José.
+        </strong>
+
+        <div class="translation">
+            Meu nome é José.
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            J-O-S-É.
+        </strong>
+
+        <div class="translation">
+            As letras do nome, uma por uma.
+        </div>
+
+    </div>
+
+
+    <div class="example">
+
+        <strong>
+            Can you spell that, please?
+        </strong>
+
+        <div class="translation">
+            Pode soletrar isso, por favor?
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- CAPITAL AND LOWERCASE -->
+
+<div class="lesson-card">
+
+    <h3>
+        🔠 5. Capital Letters and Lowercase Letters
+    </h3>
+
+
+    <p>
+        English letters can be written in uppercase or lowercase.
+    </p>
+
+
+    <table class="vocab-table">
+
+        <tr>
+            <th>Uppercase</th>
+            <th>Lowercase</th>
+            <th>Example</th>
+        </tr>
+
+        <tr>
+            <td>A</td>
+            <td>a</td>
+            <td>Apple</td>
+        </tr>
+
+        <tr>
+            <td>B</td>
+            <td>b</td>
+            <td>Book</td>
+        </tr>
+
+        <tr>
+            <td>C</td>
+            <td>c</td>
+            <td>Cat</td>
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td>d</td>
+            <td>Dog</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td>e</td>
+            <td>English</td>
+        </tr>
+
+    </table>
+
+
+    <div class="info-box">
+
+        <strong>Remember:</strong>
+
+        <p>
+            We normally use a capital letter at the beginning
+            of a sentence and for names of people and places.
+        </p>
+
+        <p>
+            Example:
+            <strong>José is from Mozambique.</strong>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- DIALOGUE -->
+
+<div class="lesson-card">
+
+    <h3>
+        🗣️ 6. Dialogue
+    </h3>
+
+
+    <div class="dialogue">
+
+        <p>
+            <strong>Teacher:</strong>
+            What's your name?
+        </p>
+
+        <p>
+            <strong>Student:</strong>
+            My name is David.
+        </p>
+
+        <p>
+            <strong>Teacher:</strong>
+            How do you spell your name?
+        </p>
+
+        <p>
+            <strong>Student:</strong>
+            D-A-V-I-D.
+        </p>
+
+        <p>
+            <strong>Teacher:</strong>
+            Very good!
+        </p>
+
+        <p>
+            <strong>Student:</strong>
+            Thank you.
+        </p>
+
+    </div>
+
+
+    <h4>
+        Portuguese Translation
+    </h4>
+
+
+    <div class="example">
+
+        <p>
+            <strong>Professor:</strong>
+            Qual é o seu nome?
+        </p>
+
+        <p>
+            <strong>Aluno:</strong>
+            Meu nome é David.
+        </p>
+
+        <p>
+            <strong>Professor:</strong>
+            Como se soletra o seu nome?
+        </p>
+
+        <p>
+            <strong>Aluno:</strong>
+            D-A-V-I-D.
+        </p>
+
+        <p>
+            <strong>Professor:</strong>
+            Muito bem!
+        </p>
+
+        <p>
+            <strong>Aluno:</strong>
+            Obrigado.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- READING -->
+
+<div class="lesson-card">
+
+    <h3>
+        📖 7. Reading
+    </h3>
+
+
+    <div class="example">
+
+        <p>
+            Hello! My name is Ana.
+        </p>
+
+        <p>
+            I am learning English at Bright English Academy.
+        </p>
+
+        <p>
+            I can say the English alphabet from A to Z.
+        </p>
+
+        <p>
+            I can also spell my name:
+            A-N-A.
+        </p>
+
+        <p>
+            I like learning English.
+        </p>
+
+    </div>
+
+
+    <h4>
+        Reading Questions
+    </h4>
+
+
+    <ol>
+
+        <li>
+            What is her name?
+        </li>
+
+        <li>
+            Where does she study English?
+        </li>
+
+        <li>
+            Can she say the alphabet?
+        </li>
+
+        <li>
+            How does she spell her name?
+        </li>
+
+    </ol>
+
+
+    <div class="info-box">
+
+        <strong>
+            Answers:
+        </strong>
+
+        <br><br>
+
+        1. Her name is Ana.
+
+        <br><br>
+
+        2. She studies at Bright English Academy.
+
+        <br><br>
+
+        3. Yes, she can.
+
+        <br><br>
+
+        4. A-N-A.
+
+    </div>
+
+</div>
+
+
+<!-- WRITING -->
+
+<div class="lesson-card">
+
+    <h3>
+        ✍️ 8. Writing Practice
+    </h3>
+
+
+    <p>
+        Write your name and spell it in English.
+    </p>
+
+
+    <div class="example">
+
+        <p>
+            My name is __________.
+        </p>
+
+        <p>
+            It is spelled:
+            __________________.
+        </p>
+
+        <p>
+            I am learning English at Bright English Academy.
+        </p>
+
+    </div>
+
+
+    <p>
+        Now write the names of three people you know
+        and spell each name.
+    </p>
+
+</div>
+
+
+<!-- SPEAKING -->
+
+<div class="lesson-card">
+
+    <h3>
+        🗣️ 9. Speaking Practice
+    </h3>
+
+
+    <p>
+        Practice this conversation with a partner.
+    </p>
+
+
+    <div class="dialogue">
+
+        <p>
+            A: What's your name?
+        </p>
+
+        <p>
+            B: My name is __________.
+        </p>
+
+        <p>
+            A: How do you spell your name?
+        </p>
+
+        <p>
+            B: __________.
+        </p>
+
+        <p>
+            A: Thank you.
+        </p>
+
+        <p>
+            B: You're welcome.
+        </p>
+
+    </div>
+
+
+    <div class="tip">
+
+        💡 Practice until you can spell your name
+        without looking at the letters.
+
+    </div>
+
+</div>
+
+
+<!-- QUIZ -->
+
+<div id="practice" class="lesson-card">
+
+    <h3>
+        📝 10. Interactive Quiz
+    </h3>
+
+
+    <div class="exercise">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question">
+
+            <p>
+                <strong>1.</strong>
+                How many letters are in the English alphabet?
+            </p>
+
+            <select id="q1">
+
+                <option value="">
+                    Choose an answer
+                </option>
+
+                <option value="wrong">
+                    24
+                </option>
+
+                <option value="correct">
+                    26
+                </option>
+
+                <option value="wrong">
+                    28
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question">
+
+            <p>
+                <strong>2.</strong>
+                What letter comes after A?
+            </p>
+
+            <select id="q2">
+
+                <option value="">
+                    Choose an answer
+                </option>
+
+                <option value="correct">
+                    B
+                </option>
+
+                <option value="wrong">
+                    C
+                </option>
+
+                <option value="wrong">
+                    D
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question">
+
+            <p>
+                <strong>3.</strong>
+                Complete:
+            </p>
+
+            <p>
+                C - A - ______
+            </p>
+
+            <input
+                type="text"
+                id="q3"
+                placeholder="Your answer"
+            >
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question">
+
+            <p>
+                <strong>4.</strong>
+                "How do you spell your name?"
+                means:
+            </p>
+
+            <select id="q4">
+
+                <option value="">
+                    Choose an answer
+                </option>
+
+                <option value="wrong">
+                    Qual é o seu nome?
+                </option>
+
+                <option value="correct">
+                    Como se soletra o seu nome?
+                </option>
+
+                <option value="wrong">
+                    Como você está?
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question">
+
+            <p>
+                <strong>5.</strong>
+                Spell the word "CAT":
+            </p>
+
+            <input
+                type="text"
+                id="q5"
+                placeholder="Example: C-A-T"
+            >
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question">
+
+            <p>
+                <strong>6.</strong>
+                Which letter comes before Z?
+            </p>
+
+            <select id="q6">
+
+                <option value="">
+                    Choose an answer
+                </option>
+
+                <option value="wrong">
+                    X
+                </option>
+
+                <option value="correct">
+                    Y
+                </option>
+
+                <option value="wrong">
+                    W
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question">
+
+            <p>
+                <strong>7.</strong>
+                Spell the word "DOG":
+            </p>
+
+            <input
+                type="text"
+                id="q7"
+                placeholder="Example: D-O-G"
+            >
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question">
+
+            <p>
+                <strong>8.</strong>
+                Which is the correct lowercase letter for B?
+            </p>
+
+            <select id="q8">
+
+                <option value="">
+                    Choose an answer
+                </option>
+
+                <option value="wrong">
+                    d
+                </option>
+
+                <option value="correct">
+                    b
+                </option>
+
+                <option value="wrong">
+                    p
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button onclick="checkQuiz()">
+
+            Check My Answers
+
+        </button>
+
+
+        <div id="quizResult"
+             class="result">
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<!-- REVIEW -->
+
+<div class="lesson-card">
+
+    <h3>
+        📋 Lesson Review
+    </h3>
+
+
+    <p>
+        Before finishing Lesson 2, make sure you can:
+    </p>
+
+
+    <ul class="checklist">
+
+        <li>
+            ✔ Recognize all 26 letters.
+        </li>
+
+        <li>
+            ✔ Pronounce the letters.
+        </li>
+
+        <li>
+            ✔ Spell simple words.
+        </li>
+
+        <li>
+            ✔ Spell your name.
+        </li>
+
+        <li>
+            ✔ Ask someone to spell a word.
+        </li>
+
+    </ul>
+
+</div>
+
+
+<!-- COMPLETION -->
+
+<div class="lesson-card">
+
+    <h3>
+        🏆 Lesson 2 Complete
+    </h3>
+
+
+    <p>
+
+        Congratulations!
+
+        You have completed
+        <strong>Lesson 2 — The Alphabet.</strong>
+
+    </p>
+
+
+    <p>
+
+        Practice the alphabet every day
+        and try spelling new English words.
+
+    </p>
+
+
+    <div class="score-box">
+
+        <h3>
+            Bright English Academy
+        </h3>
+
+        <p>
+            Speak English with Confidence!
+        </p>
+
+    </div>
+
+
+    <a href="index.html"
+       class="button back-button">
+
+        Back to Home
+
+    </a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Bright English Academy
+    </p>
+
+    <p>
+        Speak English with Confidence
+    </p>
+
+</footer>
+
+
+<!-- QUIZ SCRIPT -->
+
+<script>
+
+function checkQuiz() {
+
+    let score = 0;
+
+
+    let q1 =
+        document.getElementById("q1").value;
+
+
+    let q2 =
+        document.getElementById("q2").value;
+
+
+    let q3 =
+        document.getElementById("q3")
+        .value
+        .trim()
+        .toLowerCase();
+
+
+    let q4 =
+        document.getElementById("q4").value;
+
+
+    let q5 =
+        document.getElementById("q5")
+        .value
+        .trim()
+        .toLowerCase()
+        .replace(/\s/g, "");
+
+
+    let q6 =
+        document.getElementById("q6").value;
+
+
+    let q7 =
+        document.getElementById("q7")
+        .value
+        .trim()
+        .toLowerCase()
+        .replace(/\s/g, "");
+
+
+    let q8 =
+        document.getElementById("q8").value;
+
+
+    if (q1 === "correct") {
+        score++;
+    }
+
+
+    if (q2 === "correct") {
+        score++;
+    }
+
+
+    if (q3 === "t") {
+        score++;
+    }
+
+
+    if (q4 === "correct") {
+        score++;
+    }
+
+
+    if (q5 === "c-a-t") {
+        score++;
+    }
+
+
+    if (q6 === "correct") {
+        score++;
+    }
+
+
+    if (q7 === "d-o-g") {
+        score++;
+    }
+
+
+    if (q8 === "correct") {
+        score++;
+    }
+
+
+    let message;
+
+
+    if (score === 8) {
+
+        message =
+            "🎉 Excellent! You got 8/8! Perfect score!";
+
+    }
+
+    else if (score >= 6) {
+
+        message =
+            "👏 Great job! You got "
+            + score
+            + "/8. Keep practicing!";
+
+    }
+
+    else if (score >= 4) {
+
+        message =
+            "👍 Good effort! You got "
+            + score
+            + "/8. Review the lesson and try again.";
+
+    }
+
+    else {
+
+        message =
+            "📚 Keep studying! You got "
+            + score
+            + "/8. Review the lesson and try again.";
+
+    }
+
+
+    document.getElementById("quizResult")
+        .textContent = message;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
+```
