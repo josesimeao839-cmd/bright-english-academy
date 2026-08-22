@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josesimeao839-cmd.github.io/bright-english-academy/sitemap.xml
