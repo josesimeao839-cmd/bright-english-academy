@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bright English Academy - Beginner 1 A1 English course with structured lessons, vocabulary, grammar, reading, writing and speaking practice.">
+
+    <title>Beginner 1 — A1 | Bright English Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .course-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .course-intro {
+            background: white;
+            padding: 35px;
+            margin: 25px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            text-align: center;
+        }
+
+        .course-intro h2 {
+            color: #0b4f9c;
+            margin-bottom: 15px;
+        }
+
+        .course-intro p {
+            line-height: 1.8;
+        }
+
+        .lessons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .lesson-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
+            transition: transform 0.2s ease,
+                        box-shadow 0.2s ease;
+        }
+
+        .lesson-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .lesson-number {
+            font-size: 15px;
+            font-weight: bold;
+            color: #777;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .lesson-item h3 {
+            color: #0b4f9c;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+
+        .lesson-item p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .lesson-item .button {
+            display: inline-block;
+        }
+
+        .available {
+            border-top: 5px solid #0b4f9c;
+        }
+
+        .coming-soon {
+            border-top: 5px solid #ccc;
+            opacity: 0.85;
+        }
+
+        .coming-soon h3 {
+            color: #666;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #e9f7ef;
+            color: #217a3b;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .status-soon {
+            background: #f1f1f1;
+            color: #777;
+        }
+
+        .course-info {
+            background: #f5f9ff;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        .course-info h3 {
+            color: #0b4f9c;
+        }
+
+        .course-info li {
+            margin: 10px 0;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 700px) {
+
+            .course-intro,
+            .lesson-item,
+            .course-info {
+                padding: 20px;
+            }
+
+            .navigation-buttons {
+                flex-direction: column;
+            }
+
+            .navigation-buttons .button {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        Bright English Academy
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="beginner1.html">
+            Beginner 1
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div>
+
+        <h1>
+            🌱 Beginner 1 — A1
+        </h1>
+
+        <h2>
+            Build Your English Foundation
+        </h2>
+
+        <p>
+            Learn essential English step by step
+            through practical lessons and activities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- COURSE CONTENT -->
+
+<section class="section">
+
+<div class="course-container">
+
+
+    <!-- INTRODUCTION -->
+
+    <div class="course-intro">
+
+        <h2>
+            📚 Welcome to Beginner 1
+        </h2>
+
+        <p>
+
+            Welcome to <strong>Beginner 1 — A1</strong>
+            at Bright English Academy.
+
+        </p>
+
+        <p>
+
+            This level is designed for learners
+            who are starting their English journey.
+            You will develop basic vocabulary,
+            grammar, pronunciation, reading,
+            writing and speaking skills.
+
+        </p>
+
+        <p>
+
+            Complete each lesson step by step
+            and practice what you learn.
+
+        </p>
+
+    </div>
+
+
+    <!-- LESSONS -->
+
+    <h2>
+        📖 Course Lessons
+    </h2>
+
+
+    <div class="lessons-grid">
+
+
+        <!-- LESSON 1 -->
+
+        <div class="lesson-item available">
+
+            <div class="lesson-number">
+                Lesson 1
+            </div>
+
+            <h3>
+                👋 Greetings & Introductions
+            </h3>
+
+            <span class="status">
+                ✓ Available
+            </span>
+
+            <p>
+
+                Learn how to greet people,
+                introduce yourself, ask names
+                and talk about how you are.
+
+            </p>
+
+            <a href="lesson1.html"
+               class="button">
+
+                Start Lesson 1 →
+
+            </a>
+
+        </div>
+
+
+        <!-- LESSON 2 -->
+
+        <div class="lesson-item available">
+
+            <div class="lesson-number">
+                Lesson 2
+            </div>
+
+            <h3>
+                👤 Personal Information
+            </h3>
+
+            <span class="status">
+                ✓ Available
+            </span>
+
+            <p>
+
+                Learn how to give and ask for
+                basic personal information such
+                as name, age, country and more.
+
+            </p>
+
+            <a href="lesson2.html"
+               class="button">
+
+                Start Lesson 2 →
+
+            </a>
+
+        </div>
+
+
+        <!-- LESSON 3 -->
+
+        <div class="lesson-item coming-soon">
+
+            <div class="lesson-number">
+                Lesson 3
+            </div>
+
+            <h3>
+                🔢 Numbers
+            </h3>
+
+            <span class="status status-soon">
+                Coming Soon
+            </span>
+
+            <p>
+
+                Learn English numbers and practice
+                using them in everyday situations.
+
+            </p>
+
+            <button disabled>
+                Coming Soon
+            </button>
+
+        </div>
+
+
+        <!-- LESSON 4 -->
+
+        <div class="lesson-item coming-soon">
+
+            <div class="lesson-number">
+                Lesson 4
+            </div>
+
+            <h3>
+                📅 Days & Months
+            </h3>
+
+            <span class="status status-soon">
+                Coming Soon
+            </span>
+
+            <p>
+
+                Learn the days of the week,
+                months of the year and useful
+                calendar expressions.
+
+            </p>
+
+            <button disabled>
+                Coming Soon
+            </button>
+
+        </div>
+
+
+        <!-- LESSON 5 -->
+
+        <div class="lesson-item coming-soon">
+
+            <div class="lesson-number">
+                Lesson 5
+            </div>
+
+            <h3>
+                🎨 Colors
+            </h3>
+
+            <span class="status status-soon">
+                Coming Soon
+            </span>
+
+            <p>
+
+                Learn common colors and practice
+                describing objects and things around you.
+
+            </p>
+
+            <button disabled>
+                Coming Soon
+            </button>
+
+        </div>
+
+
+        <!-- LESSON 6 -->
+
+        <div class="lesson-item coming-soon">
+
+            <div class="lesson-number">
+                Lesson 6
+            </div>
+
+            <h3>
+                🏫 Classroom English
+            </h3>
+
+            <span class="status status-soon">
+                Coming Soon
+            </span>
+
+            <p>
+
+                Learn useful English expressions
+                for the classroom and everyday learning.
+
+            </p>
+
+            <button disabled>
+                Coming Soon
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- COURSE INFORMATION -->
+
+    <div class="course-info">
+
+        <h3>
+            🎯 What You Will Learn
+        </h3>
+
+        <ul>
+
+            <li>
+                👋 Basic greetings and introductions
+            </li>
+
+            <li>
+                👤 Personal information
+            </li>
+
+            <li>
+                🔢 Numbers and basic quantities
+            </li>
+
+            <li>
+                📅 Days and months
+            </li>
+
+            <li>
+                🎨 Colors
+            </li>
+
+            <li>
+                🧠 Basic English grammar
+            </li>
+
+            <li>
+                📖 Reading practice
+            </li>
+
+            <li>
+                ✍️ Writing practice
+            </li>
+
+            <li>
+                🗣️ Speaking practice
+            </li>
+
+            <li>
+                📝 Interactive exercises and quizzes
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <div class="navigation-buttons">
+
+        <a href="index.html"
+           class="button">
+
+            ← Back to Home
+
+        </a>
+
+        <a href="lesson1.html"
+           class="button">
+
+            Start Lesson 1 →
+
+        </a>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Bright English Academy
+    </p>
+
+    <p>
+        Created by <strong>José Vilanculos</strong>
+    </p>
+
+    <p>
+        Speak English with Confidence
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
