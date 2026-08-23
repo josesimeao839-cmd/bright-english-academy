@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +8,9 @@
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bright English Academy Student Dashboard">
 
     <title>Student Dashboard | Bright English Academy</title>
 
@@ -60,7 +64,7 @@
         }
 
         .logout:hover {
-            background: #f0f0f0;
+            background: #eef6ff;
         }
 
         main {
@@ -179,6 +183,10 @@
 
         @media (max-width: 600px) {
 
+            .header-content {
+                flex-direction: column;
+            }
+
             .lesson {
                 flex-direction: column;
 
@@ -218,11 +226,8 @@
         <div class="header-content">
 
             <div class="logo">
-
                 Bright English Academy
-
             </div>
-
 
             <button
                 id="logoutButton"
@@ -247,24 +252,17 @@
         <section class="welcome">
 
             <h1>
-
                 Welcome, Student! 👋
-
             </h1>
 
-
             <p>
-
                 Welcome to your Bright English Academy
                 student dashboard.
-
             </p>
-
 
             <p class="email">
 
                 Your email:
-
                 <strong id="studentEmail"></strong>
 
             </p>
@@ -277,17 +275,12 @@
         <section class="course">
 
             <h2>
-
                 📚 Beginner 1 — A1
-
             </h2>
 
-
             <p>
-
                 Continue your English learning journey
                 with the Beginner 1 course.
-
             </p>
 
 
@@ -309,9 +302,6 @@
                         Greetings & Introductions
 
                     </div>
-
-
-                    <!-- CORRIGIDO -->
 
                     <a
                         href="beginner-a1.html"
@@ -340,7 +330,6 @@
 
                     </div>
 
-
                     <a
                         href="lesson2.html"
                         class="start">
@@ -367,7 +356,6 @@
                         Numbers
 
                     </div>
-
 
                     <a
                         href="beginner-a1.html"
@@ -396,7 +384,6 @@
 
                     </div>
 
-
                     <a
                         href="beginner-a1.html"
                         class="start">
@@ -423,7 +410,6 @@
                         Colors
 
                     </div>
-
 
                     <a
                         href="beginner-a1.html"
@@ -452,7 +438,6 @@
 
                     </div>
 
-
                     <a
                         href="beginner-a1.html"
                         class="start">
@@ -477,7 +462,6 @@
 <!-- SUPABASE -->
 
 <script type="module">
-
 
     import {
         createClient
@@ -520,15 +504,17 @@
         );
 
 
-    async function checkUser() {
+    /*
+     * CHECK LOGIN
+     */
 
+    async function checkUser() {
 
         const {
             data,
             error
         } =
-        await supabase.auth
-        .getSession();
+        await supabase.auth.getSession();
 
 
         if (
@@ -544,13 +530,20 @@
         }
 
 
+        /*
+         * SHOW USER EMAIL
+         */
+
         studentEmail.textContent =
             data.session.user.email;
 
 
+        /*
+         * SHOW DASHBOARD
+         */
+
         loading.style.display =
             "none";
-
 
         dashboard.style.display =
             "block";
@@ -561,6 +554,10 @@
     checkUser();
 
 
+    /*
+     * LOGOUT
+     */
+
     document
         .getElementById(
             "logoutButton"
@@ -570,8 +567,7 @@
             async function() {
 
 
-                await supabase.auth
-                    .signOut();
+                await supabase.auth.signOut();
 
 
                 window.location.href =
@@ -580,10 +576,10 @@
             }
         );
 
-
 </script>
 
 
 </body>
 
 </html>
+```
