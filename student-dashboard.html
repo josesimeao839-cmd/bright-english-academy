@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +59,10 @@
             cursor: pointer;
         }
 
+        .logout:hover {
+            background: #f0f0f0;
+        }
+
         main {
             max-width: 1100px;
 
@@ -92,22 +95,10 @@
             color: #666;
         }
 
-        .courses {
-            display: grid;
-
-            grid-template-columns:
-                repeat(
-                    auto-fit,
-                    minmax(280px, 1fr)
-                );
-
-            gap: 20px;
-        }
-
         .course {
             background: white;
 
-            padding: 25px;
+            padding: 30px;
 
             border-radius: 15px;
 
@@ -206,22 +197,32 @@
 
 </head>
 
+
 <body>
 
+
 <div id="loading">
+
     Checking your account...
+
 </div>
 
 
 <div id="dashboard">
+
+
+    <!-- HEADER -->
 
     <header>
 
         <div class="header-content">
 
             <div class="logo">
+
                 Bright English Academy
+
             </div>
+
 
             <button
                 id="logoutButton"
@@ -236,23 +237,34 @@
     </header>
 
 
+    <!-- MAIN -->
+
     <main>
 
+
+        <!-- WELCOME -->
 
         <section class="welcome">
 
             <h1>
+
                 Welcome, Student! 👋
+
             </h1>
 
+
             <p>
+
                 Welcome to your Bright English Academy
                 student dashboard.
+
             </p>
+
 
             <p class="email">
 
                 Your email:
+
                 <strong id="studentEmail"></strong>
 
             </p>
@@ -260,20 +272,29 @@
         </section>
 
 
+        <!-- COURSE -->
+
         <section class="course">
 
             <h2>
+
                 📚 Beginner 1 — A1
+
             </h2>
 
+
             <p>
+
                 Continue your English learning journey
                 with the Beginner 1 course.
+
             </p>
 
 
             <div class="lesson-list">
 
+
+                <!-- LESSON 1 -->
 
                 <div class="lesson">
 
@@ -289,8 +310,11 @@
 
                     </div>
 
+
+                    <!-- CORRIGIDO -->
+
                     <a
-                        href="lesson1.html"
+                        href="beginner-a1.html"
                         class="start">
 
                         Start Lesson →
@@ -299,6 +323,8 @@
 
                 </div>
 
+
+                <!-- LESSON 2 -->
 
                 <div class="lesson">
 
@@ -314,6 +340,7 @@
 
                     </div>
 
+
                     <a
                         href="lesson2.html"
                         class="start">
@@ -324,6 +351,8 @@
 
                 </div>
 
+
+                <!-- LESSON 3 -->
 
                 <div class="lesson">
 
@@ -339,8 +368,9 @@
 
                     </div>
 
+
                     <a
-                        href="beginner1.html"
+                        href="beginner-a1.html"
                         class="start">
 
                         Course →
@@ -349,6 +379,8 @@
 
                 </div>
 
+
+                <!-- LESSON 4 -->
 
                 <div class="lesson">
 
@@ -364,8 +396,9 @@
 
                     </div>
 
+
                     <a
-                        href="beginner1.html"
+                        href="beginner-a1.html"
                         class="start">
 
                         Course →
@@ -374,6 +407,8 @@
 
                 </div>
 
+
+                <!-- LESSON 5 -->
 
                 <div class="lesson">
 
@@ -389,8 +424,9 @@
 
                     </div>
 
+
                     <a
-                        href="beginner1.html"
+                        href="beginner-a1.html"
                         class="start">
 
                         Course →
@@ -399,6 +435,8 @@
 
                 </div>
 
+
+                <!-- LESSON 6 -->
 
                 <div class="lesson">
 
@@ -414,8 +452,9 @@
 
                     </div>
 
+
                     <a
-                        href="beginner1.html"
+                        href="beginner-a1.html"
                         class="start">
 
                         Course →
@@ -435,7 +474,10 @@
 </div>
 
 
+<!-- SUPABASE -->
+
 <script type="module">
+
 
     import {
         createClient
@@ -480,6 +522,7 @@
 
     async function checkUser() {
 
+
         const {
             data,
             error
@@ -497,6 +540,7 @@
                 "login.html";
 
             return;
+
         }
 
 
@@ -525,8 +569,10 @@
             "click",
             async function() {
 
+
                 await supabase.auth
                     .signOut();
+
 
                 window.location.href =
                     "login.html";
@@ -534,9 +580,10 @@
             }
         );
 
+
 </script>
+
 
 </body>
 
 </html>
-```
