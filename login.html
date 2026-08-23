@@ -8,7 +8,11 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Login | Bright English Academy</title>
+    <meta name="description"
+          content="Student login for Bright English Academy.">
+
+    <title>Student Login | Bright English Academy</title>
+
 
     <style>
 
@@ -16,112 +20,305 @@
             box-sizing: border-box;
         }
 
+
         body {
             margin: 0;
+
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0b4f9c, #1d78d4);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0b4f9c,
+                    #1d78d4
+                );
+
             min-height: 100vh;
+
             display: flex;
+
             align-items: center;
+
             justify-content: center;
+
             padding: 20px;
         }
 
+
         .login-container {
+
             width: 100%;
+
             max-width: 430px;
+
             background: white;
+
             padding: 40px;
+
             border-radius: 18px;
-            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+
+            box-shadow:
+                0 10px 35px
+                rgba(0, 0, 0, 0.20);
         }
 
+
         .logo {
+
             text-align: center;
+
             font-size: 28px;
+
             font-weight: bold;
+
             color: #0b4f9c;
+
             margin-bottom: 10px;
         }
 
+
         .subtitle {
+
             text-align: center;
+
             color: #666;
+
             margin-bottom: 30px;
         }
 
+
         h1 {
+
             text-align: center;
+
             color: #222;
+
             font-size: 25px;
+
             margin-bottom: 25px;
         }
 
+
         label {
+
             display: block;
+
             margin-top: 18px;
+
             margin-bottom: 7px;
+
             font-weight: bold;
+
             color: #333;
         }
 
+
         input {
+
             width: 100%;
+
             padding: 13px;
+
             border: 1px solid #ccc;
+
             border-radius: 8px;
+
             font-size: 15px;
+
             outline: none;
         }
 
+
         input:focus {
+
             border-color: #0b4f9c;
+
+            box-shadow:
+                0 0 0 2px
+                rgba(11, 79, 156, 0.10);
         }
 
-        button {
+
+        /* PASSWORD */
+
+        .password-wrapper {
+
+            position: relative;
+
             width: 100%;
-            padding: 14px;
-            margin-top: 25px;
+        }
+
+
+        .password-wrapper input {
+
+            padding-right: 50px;
+        }
+
+
+        .toggle-password {
+
+            position: absolute;
+
+            right: 8px;
+
+            top: 50%;
+
+            transform:
+                translateY(-50%);
+
+            width: auto;
+
+            margin: 0;
+
+            padding: 7px;
+
             border: none;
+
+            background: transparent;
+
+            color: #0b4f9c;
+
+            font-size: 20px;
+
+            cursor: pointer;
+
+            box-shadow: none;
+        }
+
+
+        .toggle-password:hover {
+
+            background: transparent;
+
+            color: #083b75;
+        }
+
+
+        /* LOGIN BUTTON */
+
+        .login-button {
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-top: 25px;
+
+            border: none;
+
             border-radius: 8px;
+
             background: #0b4f9c;
+
             color: white;
+
             font-size: 16px;
+
             font-weight: bold;
+
             cursor: pointer;
         }
 
-        button:hover {
+
+        .login-button:hover {
+
             background: #083b75;
         }
 
+
+        .login-button:disabled {
+
+            background: #999;
+
+            cursor: not-allowed;
+        }
+
+
+        /* MESSAGE */
+
         #message {
+
             margin-top: 20px;
+
             text-align: center;
+
             font-weight: bold;
+
             line-height: 1.5;
         }
 
+
+        .success {
+
+            color: #16803c;
+        }
+
+
+        .error {
+
+            color: #c62828;
+        }
+
+
+        /* LINKS */
+
         .links {
+
             text-align: center;
+
             margin-top: 25px;
         }
 
+
+        .links p {
+
+            color: #555;
+        }
+
+
         .links a {
+
             color: #0b4f9c;
+
             text-decoration: none;
+
             font-weight: bold;
         }
 
+
         .links a:hover {
+
             text-decoration: underline;
         }
 
+
         .home-link {
+
             display: block;
+
             margin-top: 15px;
+
             color: #666 !important;
+
             font-weight: normal !important;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 500px) {
+
+            .login-container {
+
+                padding: 30px 22px;
+            }
+
+
+            .logo {
+
+                font-size: 24px;
+            }
+
         }
 
     </style>
@@ -134,87 +331,176 @@
 
 <div class="login-container">
 
+
     <div class="logo">
+
         Bright English Academy
+
     </div>
+
 
     <div class="subtitle">
+
         Speak English with Confidence
+
     </div>
 
+
     <h1>
+
         Student Login
+
     </h1>
 
 
     <form id="loginForm">
 
+
+        <!-- EMAIL -->
+
         <label for="email">
+
             Email
+
         </label>
+
 
         <input
             type="email"
             id="email"
+            name="email"
             placeholder="Enter your email"
+            autocomplete="email"
             required
         >
 
+
+        <!-- PASSWORD -->
 
         <label for="password">
+
             Password
+
         </label>
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Enter your password"
-            required
-        >
+
+        <div class="password-wrapper">
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+            >
 
 
-        <button type="submit">
+            <button
+                type="button"
+                id="togglePassword"
+                class="toggle-password"
+                aria-label="Show password">
+
+                👁️
+
+            </button>
+
+        </div>
+
+
+        <!-- LOGIN -->
+
+        <button
+            type="submit"
+            id="loginButton"
+            class="login-button">
+
             Login
+
         </button>
+
 
     </form>
 
 
+    <!-- MESSAGE -->
+
     <div id="message"></div>
 
 
+    <!-- LINKS -->
+
     <div class="links">
 
+
         <p>
+
             Don't have an account?
+
             <a href="register.html">
+
                 Create Account
+
             </a>
+
         </p>
 
-        <a href="index.html"
-           class="home-link">
+
+        <a
+            href="index.html"
+            class="home-link">
+
             ← Back to Home
+
         </a>
 
+
     </div>
+
 
 </div>
 
 
 <script type="module">
 
-    import { createClient }
-    from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
+    /*
+     * SUPABASE
+     */
+
+    import {
+        createClient
+    }
+
+    from
+    "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+
+    /*
+     * PROJECT URL
+     */
 
     const SUPABASE_URL =
         "https://atjyyhlqqwyilddcstjp.supabase.co";
 
 
-    const SUPABASE_KEY =
-        "sb_publishable_Bm0o2tTcGPgDQ4L3qM0DvA_ve2XzJXw";
+    /*
+     * PUBLISHABLE KEY
+     *
+     * COLOQUE AQUI A SUA
+     * PUBLISHABLE KEY.
+     *
+     * NÃO coloque Secret Key.
+     */
 
+    const SUPABASE_KEY =
+        "COLOCA_AQUI_A_TUA_PUBLISHABLE_KEY";
+
+
+    /*
+     * CREATE SUPABASE CLIENT
+     */
 
     const supabase =
         createClient(
@@ -223,78 +509,243 @@
         );
 
 
+    /*
+     * ELEMENTS
+     */
+
     const loginForm =
-        document.getElementById("loginForm");
+        document.getElementById(
+            "loginForm"
+        );
+
+
+    const loginButton =
+        document.getElementById(
+            "loginButton"
+        );
+
 
     const message =
-        document.getElementById("message");
+        document.getElementById(
+            "message"
+        );
 
+
+    const password =
+        document.getElementById(
+            "password"
+        );
+
+
+    const togglePassword =
+        document.getElementById(
+            "togglePassword"
+        );
+
+
+    /*
+     * SHOW / HIDE PASSWORD
+     */
+
+    togglePassword.addEventListener(
+        "click",
+        function() {
+
+
+            if (
+                password.type ===
+                "password"
+            ) {
+
+
+                password.type =
+                    "text";
+
+
+                togglePassword.textContent =
+                    "🙈";
+
+
+                togglePassword.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+
+            }
+
+            else {
+
+
+                password.type =
+                    "password";
+
+
+                togglePassword.textContent =
+                    "👁️";
+
+
+                togglePassword.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+
+            }
+
+        }
+    );
+
+
+    /*
+     * LOGIN
+     */
 
     loginForm.addEventListener(
         "submit",
         async function(event) {
 
+
             event.preventDefault();
 
 
             const email =
-                document.getElementById("email")
+                document
+                .getElementById("email")
                 .value
                 .trim();
 
 
-            const password =
-                document.getElementById("password")
-                .value;
+            const passwordValue =
+                password.value;
 
 
-            message.textContent =
+            /*
+             * LOADING
+             */
+
+            loginButton.disabled =
+                true;
+
+
+            loginButton.textContent =
                 "Signing in...";
 
 
-            const { data, error } =
-                await supabase.auth.signInWithPassword({
+            message.className = "";
 
-                    email: email,
 
-                    password: password
+            message.textContent =
+                "Checking your account...";
 
-                });
 
+            /*
+             * SUPABASE LOGIN
+             */
+
+            const {
+                data,
+                error
+            } =
+            await supabase.auth
+            .signInWithPassword({
+
+                email:
+                    email,
+
+                password:
+                    passwordValue
+
+            });
+
+
+            /*
+             * ERROR
+             */
 
             if (error) {
 
-                message.textContent =
-                    "Login failed: " + error.message;
+
+                console.error(
+                    "Login error:",
+                    error
+                );
+
+
+                message.className =
+                    "error";
+
+
+                if (
+                    error.message
+                    .toLowerCase()
+                    .includes(
+                        "email not confirmed"
+                    )
+                ) {
+
+
+                    message.textContent =
+                        "Please confirm your email before logging in.";
+
+
+                }
+
+                else {
+
+
+                    message.textContent =
+                        "Login failed: " +
+                        error.message;
+
+                }
+
+
+                loginButton.disabled =
+                    false;
+
+
+                loginButton.textContent =
+                    "Login";
+
 
                 return;
 
             }
 
 
+            /*
+             * SUCCESS
+             */
+
+            message.className =
+                "success";
+
+
             message.textContent =
-                "Login successful!";
+                "Login successful! Welcome to Bright English Academy.";
 
 
             /*
-             * Por enquanto vamos apenas
-             * confirmar que o login funciona.
+             * TEMPORARY REDIRECT
              *
-             * Depois criaremos a área
-             * do aluno.
+             * Later we will create
+             * the Student Dashboard.
              */
 
+            setTimeout(
+                function() {
 
-            setTimeout(function() {
+                    window.location.href =
+                        "index.html";
 
-                window.location.href =
-                    "index.html";
+                },
+                1200
+            );
 
-            }, 1000);
 
         }
-
     );
+
 
 </script>
 
