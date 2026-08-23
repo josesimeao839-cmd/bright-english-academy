@@ -9,9 +9,6 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Student Dashboard - Bright English Academy">
-
     <title>Student Dashboard | Bright English Academy</title>
 
     <style>
@@ -30,15 +27,17 @@
         header {
             background: #0b4f9c;
             color: white;
-            padding: 18px 20px;
+            padding: 20px;
         }
 
         .header-content {
             max-width: 1100px;
             margin: auto;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             gap: 20px;
         }
 
@@ -51,272 +50,153 @@
             border: none;
             background: white;
             color: #0b4f9c;
-            padding: 10px 18px;
-            border-radius: 7px;
-            font-weight: bold;
-            cursor: pointer;
-        }
 
-        .logout:hover {
-            background: #eaf2ff;
+            padding: 10px 18px;
+
+            border-radius: 7px;
+
+            font-weight: bold;
+
+            cursor: pointer;
         }
 
         main {
             max-width: 1100px;
-            margin: 35px auto;
+
+            margin: 40px auto;
+
             padding: 0 20px;
         }
 
         .welcome {
             background: white;
+
             padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,.08);
+
             margin-bottom: 30px;
         }
 
         .welcome h1 {
             margin-top: 0;
-            color: #0b4f9c;
-            font-size: 30px;
-        }
 
-        .welcome p {
-            line-height: 1.6;
-            color: #666;
+            color: #0b4f9c;
         }
 
         .email {
-            color: #555;
-        }
-
-        .email strong {
-            color: #0b4f9c;
-        }
-
-        /* COURSE */
-
-        .course {
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,.08);
-            overflow: hidden;
-        }
-
-        .course-header {
-            padding: 28px;
-            background: #f5f9ff;
-        }
-
-        .course-header h2 {
-            margin: 0 0 8px;
-            color: #0b4f9c;
-        }
-
-        .course-header p {
-            margin: 0;
             color: #666;
         }
 
-        /* PROGRESS */
+        .courses {
+            display: grid;
 
-        .progress-section {
-            padding: 25px 28px;
-            border-bottom: 1px solid #e5e9ef;
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 20px;
         }
 
-        .progress-top {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
-            font-weight: bold;
+        .course {
+            background: white;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(0,0,0,.08);
         }
 
-        .progress-bar {
-            width: 100%;
-            height: 12px;
-            background: #e1e7ef;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            width: 0%;
-            height: 100%;
-            background: #0b4f9c;
-            border-radius: 20px;
-            transition: width .4s ease;
-        }
-
-        /* LESSONS */
-
-        .lessons {
-            padding: 28px;
-        }
-
-        .lessons-title {
-            margin-top: 0;
+        .course h2 {
             color: #0b4f9c;
+        }
+
+        .course p {
+            color: #666;
+
+            line-height: 1.6;
+        }
+
+        .lesson-list {
+            margin-top: 20px;
         }
 
         .lesson {
             display: flex;
+
             justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid #e1e6ed;
-            border-radius: 12px;
-            background: white;
-        }
 
-        .lesson:last-child {
-            margin-bottom: 0;
-        }
-
-        .lesson-info {
-            display: flex;
             align-items: center;
+
             gap: 15px;
+
+            padding: 15px;
+
+            margin-bottom: 12px;
+
+            background: #f5f9ff;
+
+            border-radius: 10px;
         }
 
-        .lesson-number {
-            width: 45px;
-            height: 45px;
-            min-width: 45px;
-            border-radius: 50%;
-            background: #eaf2ff;
+        .lesson strong {
             color: #0b4f9c;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
         }
 
-        .lesson h3 {
-            margin: 0 0 6px;
-            font-size: 17px;
-        }
-
-        .lesson p {
-            margin: 0;
-            color: #777;
-            font-size: 14px;
-        }
-
-        .available {
-            border-left: 5px solid #0b4f9c;
-        }
-
-        .coming-soon {
-            opacity: .65;
-            border-left: 5px solid #ccc;
-        }
-
-        .status {
+        .start {
             display: inline-block;
-            margin-top: 8px;
-            padding: 5px 10px;
-            border-radius: 20px;
-            background: #e9f7ef;
-            color: #217a3b;
-            font-size: 12px;
-            font-weight: bold;
-        }
 
-        .status-soon {
-            background: #f1f1f1;
-            color: #777;
-        }
+            padding: 10px 15px;
 
-        .lesson-button {
-            display: inline-block;
-            padding: 10px 16px;
             background: #0b4f9c;
+
             color: white;
+
             text-decoration: none;
+
             border-radius: 7px;
+
             font-weight: bold;
-            white-space: nowrap;
         }
 
-        .lesson-button:hover {
+        .start:hover {
             background: #083b75;
-        }
-
-        .disabled-button {
-            padding: 10px 16px;
-            background: #ddd;
-            color: #777;
-            border: none;
-            border-radius: 7px;
-            font-weight: bold;
-            cursor: not-allowed;
-        }
-
-        /* COURSE BUTTON */
-
-        .course-action {
-            padding: 0 28px 28px;
-        }
-
-        .continue-button {
-            display: block;
-            text-align: center;
-            padding: 14px;
-            background: #0b4f9c;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .continue-button:hover {
-            background: #083b75;
-        }
-
-        footer {
-            text-align: center;
-            color: #777;
-            padding: 35px 20px;
-            font-size: 14px;
         }
 
         #loading {
             text-align: center;
+
             margin-top: 100px;
-            color: #0b4f9c;
-            font-weight: bold;
+
             font-size: 18px;
+
+            color: #555;
         }
 
         #dashboard {
             display: none;
         }
 
-        @media (max-width: 700px) {
-
-            .header-content {
-                flex-direction: column;
-            }
-
-            .logout {
-                width: 100%;
-            }
-
-            .welcome h1 {
-                font-size: 24px;
-            }
+        @media (max-width: 600px) {
 
             .lesson {
                 flex-direction: column;
-                align-items: stretch;
+
+                align-items: flex-start;
             }
 
-            .lesson-button,
-            .disabled-button {
+            .lesson .start {
                 width: 100%;
+
                 text-align: center;
             }
 
@@ -326,21 +206,14 @@
 
 </head>
 
-
 <body>
 
-
 <div id="loading">
-
     Checking your account...
-
 </div>
 
 
 <div id="dashboard">
-
-
-    <!-- HEADER -->
 
     <header>
 
@@ -363,12 +236,8 @@
     </header>
 
 
-    <!-- MAIN -->
-
     <main>
 
-
-        <!-- WELCOME -->
 
         <section class="welcome">
 
@@ -384,353 +253,184 @@
             <p class="email">
 
                 Your email:
-
-                <strong id="studentEmail">
-                    Loading...
-                </strong>
+                <strong id="studentEmail"></strong>
 
             </p>
 
         </section>
 
 
-        <!-- COURSE -->
-
         <section class="course">
 
+            <h2>
+                📚 Beginner 1 — A1
+            </h2>
 
-            <div class="course-header">
-
-                <h2>
-                    📚 Beginner 1 — A1
-                </h2>
-
-                <p>
-                    Build Your English Foundation
-                </p>
-
-            </div>
+            <p>
+                Continue your English learning journey
+                with the Beginner 1 course.
+            </p>
 
 
-            <!-- PROGRESS -->
-
-            <div class="progress-section">
-
-                <div class="progress-top">
-
-                    <span>
-                        Course Progress
-                    </span>
-
-                    <span>
-                        <span id="progressText">0</span>%
-                    </span>
-
-                </div>
-
-                <div class="progress-bar">
-
-                    <div
-                        id="progressFill"
-                        class="progress-fill">
-
-                    </div>
-
-                </div>
-
-            </div>
+            <div class="lesson-list">
 
 
-            <!-- LESSONS -->
+                <div class="lesson">
 
-            <div class="lessons">
+                    <div>
 
-                <h2 class="lessons-title">
-                    📖 Your Lessons
-                </h2>
+                        <strong>
+                            Lesson 1
+                        </strong>
 
+                        <br>
 
-                <!-- LESSON 1 -->
-
-                <div class="lesson available">
-
-                    <div class="lesson-info">
-
-                        <div class="lesson-number">
-                            1
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                👋 Greetings & Introductions
-                            </h3>
-
-                            <p>
-                                Learn greetings, introductions
-                                and basic expressions.
-                            </p>
-
-                            <span class="status">
-                                ✓ Available
-                            </span>
-
-                        </div>
+                        Greetings & Introductions
 
                     </div>
 
                     <a
                         href="lesson1.html"
-                        class="lesson-button">
+                        class="start">
 
-                        Start Lesson
+                        Start Lesson →
 
                     </a>
 
                 </div>
 
 
-                <!-- LESSON 2 -->
+                <div class="lesson">
 
-                <div class="lesson available">
+                    <div>
 
-                    <div class="lesson-info">
+                        <strong>
+                            Lesson 2
+                        </strong>
 
-                        <div class="lesson-number">
-                            2
-                        </div>
+                        <br>
 
-                        <div>
-
-                            <h3>
-                                👤 Personal Information
-                            </h3>
-
-                            <p>
-                                Learn how to give and ask
-                                for basic personal information.
-                            </p>
-
-                            <span class="status">
-                                ✓ Available
-                            </span>
-
-                        </div>
+                        Personal Information
 
                     </div>
 
                     <a
                         href="lesson2.html"
-                        class="lesson-button">
+                        class="start">
 
-                        Start Lesson
+                        Start Lesson →
 
                     </a>
 
                 </div>
 
 
-                <!-- LESSON 3 -->
+                <div class="lesson">
 
-                <div class="lesson coming-soon">
+                    <div>
 
-                    <div class="lesson-info">
+                        <strong>
+                            Lesson 3
+                        </strong>
 
-                        <div class="lesson-number">
-                            3
-                        </div>
+                        <br>
 
-                        <div>
-
-                            <h3>
-                                🔢 Numbers
-                            </h3>
-
-                            <p>
-                                Learn English numbers and
-                                practice everyday situations.
-                            </p>
-
-                            <span class="status status-soon">
-                                Coming Soon
-                            </span>
-
-                        </div>
+                        Numbers
 
                     </div>
 
-                    <button
-                        class="disabled-button"
-                        disabled>
+                    <a
+                        href="beginner1.html"
+                        class="start">
 
-                        Coming Soon
+                        Course →
 
-                    </button>
+                    </a>
 
                 </div>
 
 
-                <!-- LESSON 4 -->
+                <div class="lesson">
 
-                <div class="lesson coming-soon">
+                    <div>
 
-                    <div class="lesson-info">
+                        <strong>
+                            Lesson 4
+                        </strong>
 
-                        <div class="lesson-number">
-                            4
-                        </div>
+                        <br>
 
-                        <div>
-
-                            <h3>
-                                📅 Days & Months
-                            </h3>
-
-                            <p>
-                                Learn days, months and
-                                useful calendar expressions.
-                            </p>
-
-                            <span class="status status-soon">
-                                Coming Soon
-                            </span>
-
-                        </div>
+                        Days & Months
 
                     </div>
 
-                    <button
-                        class="disabled-button"
-                        disabled>
+                    <a
+                        href="beginner1.html"
+                        class="start">
 
-                        Coming Soon
+                        Course →
 
-                    </button>
+                    </a>
 
                 </div>
 
 
-                <!-- LESSON 5 -->
+                <div class="lesson">
 
-                <div class="lesson coming-soon">
+                    <div>
 
-                    <div class="lesson-info">
+                        <strong>
+                            Lesson 5
+                        </strong>
 
-                        <div class="lesson-number">
-                            5
-                        </div>
+                        <br>
 
-                        <div>
-
-                            <h3>
-                                🎨 Colors
-                            </h3>
-
-                            <p>
-                                Learn common colors and
-                                describe objects and things.
-                            </p>
-
-                            <span class="status status-soon">
-                                Coming Soon
-                            </span>
-
-                        </div>
+                        Colors
 
                     </div>
 
-                    <button
-                        class="disabled-button"
-                        disabled>
+                    <a
+                        href="beginner1.html"
+                        class="start">
 
-                        Coming Soon
+                        Course →
 
-                    </button>
+                    </a>
 
                 </div>
 
 
-                <!-- LESSON 6 -->
+                <div class="lesson">
 
-                <div class="lesson coming-soon">
+                    <div>
 
-                    <div class="lesson-info">
+                        <strong>
+                            Lesson 6
+                        </strong>
 
-                        <div class="lesson-number">
-                            6
-                        </div>
+                        <br>
 
-                        <div>
-
-                            <h3>
-                                🏫 Classroom English
-                            </h3>
-
-                            <p>
-                                Learn useful expressions for
-                                the classroom and learning.
-                            </p>
-
-                            <span class="status status-soon">
-                                Coming Soon
-                            </span>
-
-                        </div>
+                        Classroom English
 
                     </div>
 
-                    <button
-                        class="disabled-button"
-                        disabled>
+                    <a
+                        href="beginner1.html"
+                        class="start">
 
-                        Coming Soon
+                        Course →
 
-                    </button>
+                    </a>
 
                 </div>
+
 
             </div>
-
-
-            <!-- CONTINUE -->
-
-            <div class="course-action">
-
-                <a
-                    href="beginner1.html"
-                    class="continue-button">
-
-                    📚 Open Beginner 1 Course
-
-                </a>
-
-            </div>
-
 
         </section>
 
 
     </main>
-
-
-    <!-- FOOTER -->
-
-    <footer>
-
-        <p>
-            © 2026 Bright English Academy
-        </p>
-
-        <p>
-            Created by <strong>José Vilanculos</strong>
-        </p>
-
-        <p>
-            Speak English with Confidence
-        </p>
-
-    </footer>
-
 
 </div>
 
@@ -740,6 +440,7 @@
     import {
         createClient
     }
+
     from
     "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
 
@@ -747,14 +448,6 @@
     const SUPABASE_URL =
         "https://atjyyhlqqwyilddcstjp.supabase.co";
 
-
-    /*
-     * IMPORTANTE:
-     * Usa aqui a mesma Publishable Key
-     * que já está funcionando no teu projeto.
-     *
-     * Não uses Secret Key ou service_role.
-     */
 
     const SUPABASE_KEY =
         "sb_publishable_Bm0o2tTcGPgDQ4L3qM0DvA_ve2XzJXw";
@@ -785,24 +478,19 @@
         );
 
 
-    const logoutButton =
-        document.getElementById(
-            "logoutButton"
-        );
-
-
     async function checkUser() {
 
         const {
             data,
             error
         } =
-        await supabase.auth.getUser();
+        await supabase.auth
+        .getSession();
 
 
         if (
             error ||
-            !data.user
+            !data.session
         ) {
 
             window.location.href =
@@ -813,7 +501,7 @@
 
 
         studentEmail.textContent =
-            data.user.email;
+            data.session.user.email;
 
 
         loading.style.display =
@@ -826,31 +514,27 @@
     }
 
 
-    logoutButton.addEventListener(
-        "click",
-        async function() {
-
-            logoutButton.disabled =
-                true;
-
-            logoutButton.textContent =
-                "Logging out...";
-
-
-            await supabase.auth.signOut();
-
-
-            window.location.href =
-                "login.html";
-
-        }
-    );
-
-
     checkUser();
 
-</script>
 
+    document
+        .getElementById(
+            "logoutButton"
+        )
+        .addEventListener(
+            "click",
+            async function() {
+
+                await supabase.auth
+                    .signOut();
+
+                window.location.href =
+                    "login.html";
+
+            }
+        );
+
+</script>
 
 </body>
 
