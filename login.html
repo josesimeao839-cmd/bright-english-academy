@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Bright English Academy</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0b4f9c, #1d78d4);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 430px;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.20);
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #0b4f9c;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+            font-size: 25px;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #0b4f9c;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 8px;
+            background: #0b4f9c;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #083b75;
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .links a {
+            color: #0b4f9c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .home-link {
+            display: block;
+            margin-top: 15px;
+            color: #666 !important;
+            font-weight: normal !important;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="login-container">
+
+    <div class="logo">
+        Bright English Academy
+    </div>
+
+    <div class="subtitle">
+        Speak English with Confidence
+    </div>
+
+    <h1>
+        Student Login
+    </h1>
+
+
+    <form id="loginForm">
+
+        <label for="email">
+            Email
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+        >
+
+
+        <label for="password">
+            Password
+        </label>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+        >
+
+
+        <button type="submit">
+            Login
+        </button>
+
+    </form>
+
+
+    <div id="message"></div>
+
+
+    <div class="links">
+
+        <p>
+            Don't have an account?
+            <a href="register.html">
+                Create Account
+            </a>
+        </p>
+
+        <a href="index.html"
+           class="home-link">
+            ← Back to Home
+        </a>
+
+    </div>
+
+</div>
+
+
+<script type="module">
+
+    import { createClient }
+    from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+
+    const SUPABASE_URL =
+        "https://atjyyhlqqwyilddcstjp.supabase.co";
+
+
+    const SUPABASE_KEY =
+        "COLOCA_AQUI_A_TUA_PUBLISHABLE_KEY";
+
+
+    const supabase =
+        createClient(
+            SUPABASE_URL,
+            SUPABASE_KEY
+        );
+
+
+    const loginForm =
+        document.getElementById("loginForm");
+
+    const message =
+        document.getElementById("message");
+
+
+    loginForm.addEventListener(
+        "submit",
+        async function(event) {
+
+            event.preventDefault();
+
+
+            const email =
+                document.getElementById("email")
+                .value
+                .trim();
+
+
+            const password =
+                document.getElementById("password")
+                .value;
+
+
+            message.textContent =
+                "Signing in...";
+
+
+            const { data, error } =
+                await supabase.auth.signInWithPassword({
+
+                    email: email,
+
+                    password: password
+
+                });
+
+
+            if (error) {
+
+                message.textContent =
+                    "Login failed: " + error.message;
+
+                return;
+
+            }
+
+
+            message.textContent =
+                "Login successful!";
+
+
+            /*
+             * Por enquanto vamos apenas
+             * confirmar que o login funciona.
+             *
+             * Depois criaremos a área
+             * do aluno.
+             */
+
+
+            setTimeout(function() {
+
+                window.location.href =
+                    "index.html";
+
+            }, 1000);
+
+        }
+
+    );
+
+</script>
+
+
+</body>
+
+</html>
