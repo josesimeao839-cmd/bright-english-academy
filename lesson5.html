@@ -4,14 +4,9 @@
 <head>
 
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-      content="Bright English Academy - Day 2 Lesson 2 - Personal Information">
-
-<title>Lesson 2 — Personal Information | Bright English Academy</title>
+<title>Lesson 5 — Colors | Bright English Academy</title>
 
 <style>
 
@@ -25,7 +20,7 @@ html{
 
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
     color:#17233c;
     line-height:1.6;
@@ -45,8 +40,8 @@ header{
     max-width:1100px;
     margin:auto;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:20px;
 }
 
@@ -159,10 +154,6 @@ nav a:hover{
     font-weight:bold;
 }
 
-.lesson-nav a:hover{
-    background:#d7eaff;
-}
-
 h2{
     color:#0b4f9c;
     font-size:26px;
@@ -171,10 +162,11 @@ h2{
 
 h3{
     color:#0b4f9c;
-    margin-bottom:8px;
 }
 
-.objective-grid{
+.objective-grid,
+.vocabulary-grid,
+.review-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:15px;
@@ -193,12 +185,6 @@ h3{
     margin-bottom:5px;
 }
 
-.vocabulary-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-}
-
 .word-card{
     background:#f8fbff;
     border:1px solid #dfe8f3;
@@ -207,7 +193,7 @@ h3{
 }
 
 .word{
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
     color:#0b4f9c;
 }
@@ -215,6 +201,13 @@ h3{
 .translation{
     color:#64748b;
     margin:5px 0 12px;
+}
+
+.color-box{
+    height:60px;
+    border-radius:10px;
+    margin-bottom:14px;
+    border:1px solid #ddd;
 }
 
 .listen-btn{
@@ -241,7 +234,7 @@ h3{
 
 .example{
     background:white;
-    padding:13px;
+    padding:15px;
     border-radius:8px;
     margin-top:12px;
 }
@@ -266,7 +259,7 @@ h3{
     font-weight:bold;
 }
 
-.student{
+.maria{
     color:#087f54;
     font-weight:bold;
 }
@@ -394,12 +387,6 @@ h3{
     font-size:18px;
 }
 
-.review-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-}
-
 .review-item{
     background:#f5f9ff;
     padding:13px;
@@ -464,7 +451,7 @@ footer strong{
 
     .objective-grid,
     .vocabulary-grid,
-    .review-list{
+    .review-grid{
         grid-template-columns:1fr;
     }
 
@@ -483,6 +470,7 @@ footer strong{
     .page-navigation a{
         text-align:center;
     }
+
 }
 
 </style>
@@ -500,13 +488,9 @@ footer strong{
 </a>
 
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="beginner1.html">Course</a>
-
 <a href="student-login.html">Login</a>
-
 </nav>
 
 </div>
@@ -520,33 +504,26 @@ footer strong{
 <section class="card hero">
 
 <span class="day-badge">
-📚 Day 2 / Lesson 2
+📚 Day 5 / Lesson 5
 </span>
 
 <h1>
-🙋 Personal Information
+🎨 Colors
 </h1>
 
 <p>
-Learn how to give and ask for basic personal information in English.
+Learn common colors and use them to describe people, objects and things around you.
 </p>
 
 <div class="progress-area">
 
 <div class="progress-title">
-
 <span>Lesson Progress</span>
-
 <span id="progressText">0%</span>
-
 </div>
 
 <div class="progress-bar">
-
-<div id="progressFill"
-     class="progress-fill">
-</div>
-
+<div id="progressFill" class="progress-fill"></div>
 </div>
 
 </div>
@@ -558,6 +535,7 @@ Learn how to give and ask for basic personal information in English.
 
 <a href="#objectives">Objectives</a>
 <a href="#vocabulary">Vocabulary</a>
+<a href="#phrases">Useful Phrases</a>
 <a href="#grammar">Grammar</a>
 <a href="#pronunciation">Pronunciation</a>
 <a href="#conversation">Conversation</a>
@@ -575,40 +553,38 @@ Learn how to give and ask for basic personal information in English.
 
 <h2>🎯 Lesson Objectives</h2>
 
-<p>
-By the end of this lesson, you will be able to:
-</p>
+<p>By the end of this lesson, you will be able to:</p>
 
 <div class="objective-grid">
 
 <div class="objective">
-<strong>🙋 Personal Information</strong>
-Give basic information about yourself.
+<strong>🎨 Name Colors</strong>
+Identify and pronounce common colors.
 </div>
 
 <div class="objective">
-<strong>🎂 Age</strong>
-Say and ask someone's age.
+<strong>👀 Describe Objects</strong>
+Say what color something is.
 </div>
 
 <div class="objective">
-<strong>🌍 Nationality</strong>
-Talk about countries and nationalities.
+<strong>❓ Ask Questions</strong>
+Ask someone about a color.
 </div>
 
 <div class="objective">
-<strong>🏙️ Where You Live</strong>
-Say where you live.
+<strong>💬 Give Answers</strong>
+Answer simple color questions.
 </div>
 
 <div class="objective">
-<strong>📱 Contact Information</strong>
-Ask for basic contact information.
+<strong>❤️ Preferences</strong>
+Talk about your favorite color.
 </div>
 
 <div class="objective">
-<strong>💬 Questions</strong>
-Ask simple questions about another person.
+<strong>🗣️ Speaking</strong>
+Use colors in everyday conversations.
 </div>
 
 </div>
@@ -618,104 +594,193 @@ Ask simple questions about another person.
 
 <section id="vocabulary" class="card">
 
-<h2>📚 Personal Information Vocabulary</h2>
+<h2>🎨 Colors Vocabulary</h2>
+
+<p>Learn the most common colors in English.</p>
 
 <div class="vocabulary-grid">
 
 
 <div class="word-card">
-<div class="word">Name</div>
-<div class="translation">Nome</div>
-<button class="listen-btn"
-onclick="speak('Name')">🔊 Listen</button>
+<div class="color-box" style="background:red;"></div>
+<div class="word">Red</div>
+<div class="translation">Vermelho</div>
+<button class="listen-btn" onclick="speak('Red')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Age</div>
-<div class="translation">Idade</div>
-<button class="listen-btn"
-onclick="speak('Age')">🔊 Listen</button>
+<div class="color-box" style="background:blue;"></div>
+<div class="word">Blue</div>
+<div class="translation">Azul</div>
+<button class="listen-btn" onclick="speak('Blue')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Country</div>
-<div class="translation">País</div>
-<button class="listen-btn"
-onclick="speak('Country')">🔊 Listen</button>
+<div class="color-box" style="background:green;"></div>
+<div class="word">Green</div>
+<div class="translation">Verde</div>
+<button class="listen-btn" onclick="speak('Green')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Nationality</div>
-<div class="translation">Nacionalidade</div>
-<button class="listen-btn"
-onclick="speak('Nationality')">🔊 Listen</button>
+<div class="color-box" style="background:yellow;"></div>
+<div class="word">Yellow</div>
+<div class="translation">Amarelo</div>
+<button class="listen-btn" onclick="speak('Yellow')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">City</div>
-<div class="translation">Cidade</div>
-<button class="listen-btn"
-onclick="speak('City')">🔊 Listen</button>
+<div class="color-box" style="background:black;"></div>
+<div class="word">Black</div>
+<div class="translation">Preto</div>
+<button class="listen-btn" onclick="speak('Black')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Address</div>
-<div class="translation">Endereço</div>
-<button class="listen-btn"
-onclick="speak('Address')">🔊 Listen</button>
+<div class="color-box" style="background:white;"></div>
+<div class="word">White</div>
+<div class="translation">Branco</div>
+<button class="listen-btn" onclick="speak('White')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Phone number</div>
-<div class="translation">Número de telefone</div>
-<button class="listen-btn"
-onclick="speak('Phone number')">🔊 Listen</button>
+<div class="color-box" style="background:orange;"></div>
+<div class="word">Orange</div>
+<div class="translation">Laranja</div>
+<button class="listen-btn" onclick="speak('Orange')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Email</div>
-<div class="translation">E-mail</div>
-<button class="listen-btn"
-onclick="speak('Email')">🔊 Listen</button>
+<div class="color-box" style="background:purple;"></div>
+<div class="word">Purple</div>
+<div class="translation">Roxo / Púrpura</div>
+<button class="listen-btn" onclick="speak('Purple')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Student</div>
-<div class="translation">Estudante</div>
-<button class="listen-btn"
-onclick="speak('Student')">🔊 Listen</button>
+<div class="color-box" style="background:pink;"></div>
+<div class="word">Pink</div>
+<div class="translation">Rosa</div>
+<button class="listen-btn" onclick="speak('Pink')">🔊 Listen</button>
 </div>
 
 
 <div class="word-card">
-<div class="word">Teacher</div>
-<div class="translation">Professor / Professora</div>
+<div class="color-box" style="background:brown;"></div>
+<div class="word">Brown</div>
+<div class="translation">Castanho / Marrom</div>
+<button class="listen-btn" onclick="speak('Brown')">🔊 Listen</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="phrases" class="card">
+
+<h2>💬 Useful Color Phrases</h2>
+
+
+<div class="grammar-box">
+
+<h3>1️⃣ Asking About a Color</h3>
+
+<div class="example">
+
+<span class="english">What color is it?</span>
+
+<br>
+
+De que cor é?
+
+<br><br>
+
 <button class="listen-btn"
-onclick="speak('Teacher')">🔊 Listen</button>
+onclick="speak('What color is it?')">
+🔊 Listen
+</button>
+
+</div>
+
 </div>
 
 
-<div class="word-card">
-<div class="word">From</div>
-<div class="translation">De</div>
+<div class="grammar-box">
+
+<h3>2️⃣ Answering</h3>
+
+<div class="example">
+
+<span class="english">It is blue.</span>
+
+<br>
+
+É azul.
+
+<br><br>
+
 <button class="listen-btn"
-onclick="speak('From')">🔊 Listen</button>
+onclick="speak('It is blue.')">
+🔊 Listen
+</button>
+
+</div>
+
 </div>
 
 
-<div class="word-card">
-<div class="word">Live</div>
-<div class="translation">Morar / Viver</div>
+<div class="grammar-box">
+
+<h3>3️⃣ Favorite Color</h3>
+
+<div class="example">
+
+<span class="english">My favorite color is green.</span>
+
+<br>
+
+A minha cor favorita é verde.
+
+<br><br>
+
 <button class="listen-btn"
-onclick="speak('Live')">🔊 Listen</button>
+onclick="speak('My favorite color is green.')">
+🔊 Listen
+</button>
+
+</div>
+
+</div>
+
+
+<div class="grammar-box">
+
+<h3>4️⃣ Asking About a Favorite Color</h3>
+
+<div class="example">
+
+<span class="english">What is your favorite color?</span>
+
+<br>
+
+Qual é a tua cor favorita?
+
+<br><br>
+
+<button class="listen-btn"
+onclick="speak('What is your favorite color?')">
+🔊 Listen
+</button>
+
 </div>
 
 </div>
@@ -725,31 +790,41 @@ onclick="speak('Live')">🔊 Listen</button>
 
 <section id="grammar" class="card">
 
-<h2>📚 Grammar — Personal Information</h2>
+<h2>📚 Grammar — What Color Is It?</h2>
 
 
 <div class="grammar-box">
 
-<h3>1️⃣ I am...</h3>
+<h3>1️⃣ It is + Color</h3>
 
 <p>
-Use <strong>I am</strong> to give information about yourself.
+Use <strong>It is</strong> to describe the color of one object.
 </p>
 
 <div class="example">
 
 <span class="english">
-I am 20 years old.
+It is red.
 </span>
 
 <br>
 
-Eu tenho 20 anos.
+É vermelho.
+
+<br><br>
+
+<span class="english">
+It is black.
+</span>
+
+<br>
+
+É preto.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am twenty years old.')">
+onclick="speak('It is red. It is black.')">
 🔊 Listen
 </button>
 
@@ -760,26 +835,32 @@ onclick="speak('I am twenty years old.')">
 
 <div class="grammar-box">
 
-<h3>2️⃣ I am from...</h3>
-
-<p>
-Use <strong>I am from</strong> to say your country or place of origin.
-</p>
+<h3>2️⃣ This is + Color</h3>
 
 <div class="example">
 
 <span class="english">
-I am from Mozambique.
+This is a blue bag.
 </span>
 
 <br>
 
-Eu sou de Moçambique.
+Esta é uma bolsa azul.
+
+<br><br>
+
+<span class="english">
+This is a green book.
+</span>
+
+<br>
+
+Este é um livro verde.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am from Mozambique.')">
+onclick="speak('This is a blue bag. This is a green book.')">
 🔊 Listen
 </button>
 
@@ -790,146 +871,46 @@ onclick="speak('I am from Mozambique.')">
 
 <div class="grammar-box">
 
-<h3>3️⃣ I live in...</h3>
+<h3>3️⃣ Color + Noun</h3>
 
 <p>
-Use <strong>I live in</strong> to say where you live.
+In English, the color normally comes before the noun.
 </p>
 
 <div class="example">
 
 <span class="english">
-I live in Maputo.
+A red car.
 </span>
 
 <br>
 
-Eu moro em Maputo.
+Um carro vermelho.
+
+<br><br>
+
+<span class="english">
+A yellow shirt.
+</span>
+
+<br>
+
+Uma camisa amarela.
+
+<br><br>
+
+<span class="english">
+A black phone.
+</span>
+
+<br>
+
+Um telefone preto.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I live in Maputo.')">
-🔊 Listen
-</button>
-
-</div>
-
-</div>
-
-
-<div class="grammar-box">
-
-<h3>4️⃣ What is your nationality?</h3>
-
-<p>
-Use this question to ask someone's nationality.
-</p>
-
-<div class="example">
-
-<span class="english">
-What is your nationality?
-</span>
-
-<br>
-
-Qual é a tua nacionalidade?
-
-<br><br>
-
-<span class="english">
-I am Mozambican.
-</span>
-
-<br>
-
-Eu sou moçambicano / moçambicana.
-
-<br><br>
-
-<button class="listen-btn"
-onclick="speak('What is your nationality? I am Mozambican.')">
-🔊 Listen
-</button>
-
-</div>
-
-</div>
-
-
-<div class="grammar-box">
-
-<h3>5️⃣ How old are you?</h3>
-
-<p>
-Use this question to ask someone's age.
-</p>
-
-<div class="example">
-
-<span class="english">
-How old are you?
-</span>
-
-<br>
-
-Quantos anos tens?
-
-<br><br>
-
-<span class="english">
-I am eighteen years old.
-</span>
-
-<br>
-
-Eu tenho dezoito anos.
-
-<br><br>
-
-<button class="listen-btn"
-onclick="speak('How old are you? I am eighteen years old.')">
-🔊 Listen
-</button>
-
-</div>
-
-</div>
-
-
-<div class="grammar-box">
-
-<h3>6️⃣ Where do you live?</h3>
-
-<p>
-Use this question to ask where someone lives.
-</p>
-
-<div class="example">
-
-<span class="english">
-Where do you live?
-</span>
-
-<br>
-
-Onde moras?
-
-<br><br>
-
-<span class="english">
-I live in Maputo.
-</span>
-
-<br>
-
-Eu moro em Maputo.
-
-<br><br>
-
-<button class="listen-btn"
-onclick="speak('Where do you live? I live in Maputo.')">
+onclick="speak('A red car. A yellow shirt. A black phone.')">
 🔊 Listen
 </button>
 
@@ -944,21 +925,17 @@ onclick="speak('Where do you live? I live in Maputo.')">
 
 <h2>🔊 Pronunciation Practice</h2>
 
-<p>
-Listen and repeat.
-</p>
+<p>Listen and repeat.</p>
 
 
 <div class="example">
 
-<strong>
-My name is José.
-</strong>
+<strong>Red — Blue — Green — Yellow</strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('My name is José.')">
+onclick="speak('Red. Blue. Green. Yellow.')">
 🔊 Listen
 </button>
 
@@ -967,14 +944,12 @@ onclick="speak('My name is José.')">
 
 <div class="example">
 
-<strong>
-I am from Mozambique.
-</strong>
+<strong>Black — White — Orange — Purple</strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am from Mozambique.')">
+onclick="speak('Black. White. Orange. Purple.')">
 🔊 Listen
 </button>
 
@@ -983,14 +958,12 @@ onclick="speak('I am from Mozambique.')">
 
 <div class="example">
 
-<strong>
-I live in Maputo.
-</strong>
+<strong>Pink — Brown</strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I live in Maputo.')">
+onclick="speak('Pink. Brown.')">
 🔊 Listen
 </button>
 
@@ -999,14 +972,12 @@ onclick="speak('I live in Maputo.')">
 
 <div class="example">
 
-<strong>
-How old are you?
-</strong>
+<strong>What color is it?</strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('How old are you?')">
+onclick="speak('What color is it?')">
 🔊 Listen
 </button>
 
@@ -1015,14 +986,12 @@ onclick="speak('How old are you?')">
 
 <div class="example">
 
-<strong>
-What is your nationality?
-</strong>
+<strong>My favorite color is green.</strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('What is your nationality?')">
+onclick="speak('My favorite color is green.')">
 🔊 Listen
 </button>
 
@@ -1035,90 +1004,68 @@ onclick="speak('What is your nationality?')">
 
 <h2>💬 Real-life Conversation</h2>
 
-<p>
-José and Maria are meeting and sharing personal information.
-</p>
+<p>José and Maria are talking about colors.</p>
 
 <div class="dialogue">
 
 <p>
 <span class="jose">José:</span>
-Hello! What's your name?
+Hi, Maria! What color is your bag?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-Hi! My name is Maria. What's your name?
-</p>
-
-<p>
-<span class="jose">José:</span>
-My name is José. Nice to meet you.
-</p>
-
-<p>
-<span class="student">Maria:</span>
-Nice to meet you too.
+<span class="maria">Maria:</span>
+It is blue.
 </p>
 
 <p>
 <span class="jose">José:</span>
-Where are you from?
+Nice! Blue is a beautiful color.
 </p>
 
 <p>
-<span class="student">Maria:</span>
-I am from Mozambique.
-</p>
-
-<p>
-<span class="jose">José:</span>
-Where do you live?
-</p>
-
-<p>
-<span class="student">Maria:</span>
-I live in Maputo.
+<span class="maria">Maria:</span>
+Thank you! What is your favorite color?
 </p>
 
 <p>
 <span class="jose">José:</span>
-How old are you?
+My favorite color is green.
 </p>
 
 <p>
-<span class="student">Maria:</span>
-I am eighteen years old. How old are you?
-</p>
-
-<p>
-<span class="jose">José:</span>
-I am twenty years old.
-</p>
-
-<p>
-<span class="student">Maria:</span>
-What is your nationality?
+<span class="maria">Maria:</span>
+Green? That's nice!
 </p>
 
 <p>
 <span class="jose">José:</span>
-I am Mozambican.
+Yes. What color is your phone?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-That's great!
+<span class="maria">Maria:</span>
+My phone is black.
 </p>
 
 <p>
 <span class="jose">José:</span>
-It was nice talking to you.
+Is your notebook red?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-Nice talking to you too. See you later!
+<span class="maria">Maria:</span>
+No, it isn't. It is yellow.
+</p>
+
+<p>
+<span class="jose">José:</span>
+I like yellow too.
+</p>
+
+<p>
+<span class="maria">Maria:</span>
+Great! We both like bright colors.
 </p>
 
 </div>
@@ -1143,22 +1090,16 @@ onclick="speakConversation()">
 <strong>1. Complete:</strong>
 
 <p>
-I ___ from Mozambique.
+What color is it? It is ______.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer1')">
-am
-</button>
+<button onclick="checkAnswer(true,'answer1')">blue</button>
 
-<button onclick="checkAnswer(this,false,'answer1')">
-is
-</button>
+<button onclick="checkAnswer(false,'answer1')">chair</button>
 
-<button onclick="checkAnswer(this,false,'answer1')">
-are
-</button>
+<button onclick="checkAnswer(false,'answer1')">book</button>
 
 </div>
 
@@ -1169,25 +1110,19 @@ are
 
 <div class="exercise">
 
-<strong>2. Complete:</strong>
+<strong>2. Choose the correct answer:</strong>
 
 <p>
-I ___ in Maputo.
+What is "red"?
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer2')">
-live
-</button>
+<button onclick="checkAnswer(true,'answer2')">Vermelho</button>
 
-<button onclick="checkAnswer(this,false,'answer2')">
-lives
-</button>
+<button onclick="checkAnswer(false,'answer2')">Verde</button>
 
-<button onclick="checkAnswer(this,false,'answer2')">
-living
-</button>
+<button onclick="checkAnswer(false,'answer2')">Azul</button>
 
 </div>
 
@@ -1198,24 +1133,20 @@ living
 
 <div class="exercise">
 
-<strong>3. Choose the correct question:</strong>
-
-<p>
-You want to ask someone's age.
-</p>
+<strong>3. Choose the correct sentence:</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer3')">
-How old are you?
+<button onclick="checkAnswer(true,'answer3')">
+It is green.
 </button>
 
-<button onclick="checkAnswer(this,false,'answer3')">
-Where do you live?
+<button onclick="checkAnswer(false,'answer3')">
+Green it is.
 </button>
 
-<button onclick="checkAnswer(this,false,'answer3')">
-What is your name?
+<button onclick="checkAnswer(false,'answer3')">
+It green is.
 </button>
 
 </div>
@@ -1227,25 +1158,19 @@ What is your name?
 
 <div class="exercise">
 
-<strong>4. Choose the correct question:</strong>
+<strong>4. Complete:</strong>
 
 <p>
-You want to know where someone lives.
+My favorite color is ______.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,false,'answer4')">
-How old are you?
-</button>
+<button onclick="checkAnswer(true,'answer4')">purple</button>
 
-<button onclick="checkAnswer(this,true,'answer4')">
-Where do you live?
-</button>
+<button onclick="checkAnswer(false,'answer4')">table</button>
 
-<button onclick="checkAnswer(this,false,'answer4')">
-What is your nationality?
-</button>
+<button onclick="checkAnswer(false,'answer4')">school</button>
 
 </div>
 
@@ -1256,25 +1181,15 @@ What is your nationality?
 
 <div class="exercise">
 
-<strong>5. Complete:</strong>
-
-<p>
-I am ___ Mozambique.
-</p>
+<strong>5. What is "white"?</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer5')">
-from
-</button>
+<button onclick="checkAnswer(true,'answer5')">Branco</button>
 
-<button onclick="checkAnswer(this,false,'answer5')">
-in
-</button>
+<button onclick="checkAnswer(false,'answer5')">Preto</button>
 
-<button onclick="checkAnswer(this,false,'answer5')">
-at
-</button>
+<button onclick="checkAnswer(false,'answer5')">Rosa</button>
 
 </div>
 
@@ -1285,24 +1200,20 @@ at
 
 <div class="exercise">
 
-<strong>6. Translate:</strong>
-
-<p>
-"I live in Maputo."
-</p>
+<strong>6. Choose the correct phrase:</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer6')">
-Eu moro em Maputo.
+<button onclick="checkAnswer(true,'answer6')">
+What color is it?
 </button>
 
-<button onclick="checkAnswer(this,false,'answer6')">
-Eu sou de Maputo.
+<button onclick="checkAnswer(false,'answer6')">
+What it color?
 </button>
 
-<button onclick="checkAnswer(this,false,'answer6')">
-Eu tenho Maputo.
+<button onclick="checkAnswer(false,'answer6')">
+Color what it?
 </button>
 
 </div>
@@ -1317,22 +1228,16 @@ Eu tenho Maputo.
 <strong>7. Complete:</strong>
 
 <p>
-How ___ are you?
+This is a ______ car.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer7')">
-old
-</button>
+<button onclick="checkAnswer(true,'answer7')">red</button>
 
-<button onclick="checkAnswer(this,false,'answer7')">
-many
-</button>
+<button onclick="checkAnswer(false,'answer7')">red is</button>
 
-<button onclick="checkAnswer(this,false,'answer7')">
-much
-</button>
+<button onclick="checkAnswer(false,'answer7')">is red</button>
 
 </div>
 
@@ -1343,32 +1248,21 @@ much
 
 <div class="exercise">
 
-<strong>8. Choose the correct answer:</strong>
-
-<p>
-Where are you from?
-</p>
+<strong>8. What color is "brown"?</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer8')">
-I am from Mozambique.
-</button>
+<button onclick="checkAnswer(true,'answer8')">Castanho / Marrom</button>
 
-<button onclick="checkAnswer(this,false,'answer8')">
-I am eighteen.
-</button>
+<button onclick="checkAnswer(false,'answer8')">Amarelo</button>
 
-<button onclick="checkAnswer(this,false,'answer8')">
-My name is Maria.
-</button>
+<button onclick="checkAnswer(false,'answer8')">Roxo</button>
 
 </div>
 
 <div id="answer8" class="answer"></div>
 
 </div>
-
 
 </section>
 
@@ -1383,11 +1277,10 @@ My name is Maria.
 <h3>Activity 1</h3>
 
 <p>
-Someone asks:
-<strong>Where are you from?</strong>
+What color is the sky on a clear day?
 </p>
 
-<button onclick="activityAnswer('A good answer is: I am from Mozambique.')">
+<button onclick="activityAnswer('Blue')">
 Check
 </button>
 
@@ -1399,16 +1292,16 @@ Check
 <h3>Activity 2</h3>
 
 <p>
-Build the sentence:
+Choose the correct sentence:
 </p>
 
 <p>
 <strong>
-am / I / Mozambique / from
+favorite / My / green / color / is
 </strong>
 </p>
 
-<button onclick="activityAnswer('Correct sentence: I am from Mozambique.')">
+<button onclick="activityAnswer('My favorite color is green.')">
 Check
 </button>
 
@@ -1420,16 +1313,10 @@ Check
 <h3>Activity 3</h3>
 
 <p>
-Build the question:
+What color is a banana usually?
 </p>
 
-<p>
-<strong>
-old / are / How / you?
-</strong>
-</p>
-
-<button onclick="activityAnswer('Correct question: How old are you?')">
+<button onclick="activityAnswer('Yellow')">
 Check
 </button>
 
@@ -1441,16 +1328,47 @@ Check
 <h3>Activity 4</h3>
 
 <p>
-Someone says:
-<strong>I live in Maputo.</strong>
+Build the sentence:
 </p>
 
 <p>
-What information did they give?
+<strong>
+is / red / It
+</strong>
 </p>
 
-<button onclick="activityAnswer('They gave their city or place of residence.')">
+<button onclick="activityAnswer('It is red.')">
 Check
+</button>
+
+</div>
+
+
+<div class="activity">
+
+<h3>Activity 5</h3>
+
+<p>
+What color is grass usually?
+</p>
+
+<button onclick="activityAnswer('Green')">
+Check
+</button>
+
+</div>
+
+
+<div class="activity">
+
+<h3>Activity 6</h3>
+
+<p>
+What color is your favorite object?
+</p>
+
+<button onclick="speak('My favorite object is blue.')">
+🔊 Hear a Model
 </button>
 
 </div>
@@ -1464,34 +1382,30 @@ Check
 
 <div class="challenge">
 
-<h3>🎤 Talk About Yourself</h3>
+<h3>🎤 Talk About Colors</h3>
 
 <p>
 Speak for 30–60 seconds.
 </p>
 
-<p>
-Try to answer:
-</p>
+<p>Try to answer:</p>
 
 <ul>
 
-<li>What is your name?</li>
+<li>What is your favorite color?</li>
 
-<li>How old are you?</li>
+<li>What color is your phone?</li>
 
-<li>Where are you from?</li>
+<li>What color is your bag?</li>
 
-<li>What is your nationality?</li>
+<li>What color is your shirt?</li>
 
-<li>Where do you live?</li>
-
-<li>Are you a student?</li>
+<li>What color is your notebook?</li>
 
 </ul>
 
 <button class="listen-btn"
-onclick="speak('Hello. My name is José. I am twenty years old. I am from Mozambique. I am Mozambican. I live in Maputo. I am a student.')">
+onclick="speak('My favorite color is blue. My phone is black. My bag is green. My shirt is white. My notebook is red.')">
 
 🔊 Hear a Model
 
@@ -1509,26 +1423,20 @@ onclick="speak('Hello. My name is José. I am twenty years old. I am from Mozamb
 <div class="challenge">
 
 <p>
-Write 6–8 sentences about yourself.
+Write 6–8 sentences about colors.
 </p>
 
-<p>
-Try to include:
-</p>
+<p>Try to use:</p>
 
 <ul>
 
-<li>Your name</li>
+<li>It is...</li>
 
-<li>Your age</li>
+<li>This is a...</li>
 
-<li>Your country</li>
+<li>My favorite color is...</li>
 
-<li>Your nationality</li>
-
-<li>Your city</li>
-
-<li>Your occupation or school</li>
+<li>What color is it?</li>
 
 </ul>
 
@@ -1538,21 +1446,19 @@ Try to include:
 
 <br><br>
 
-Hello.
+My favorite color is blue.
 
-My name is José.
+My phone is black.
 
-I am twenty years old.
+My bag is green.
 
-I am from Mozambique.
+My notebook is red.
 
-I am Mozambican.
+My shirt is white.
 
-I live in Maputo.
+My shoes are brown.
 
-I am a student.
-
-Nice to meet you.
+I like yellow too.
 
 </div>
 
@@ -1565,35 +1471,20 @@ Nice to meet you.
 
 <h2>🎯 10-Question Quiz</h2>
 
-<p>
-Choose the best answer.
-</p>
+<p>Choose the best answer.</p>
 
 <form id="quizForm">
 
 
 <div class="quiz-question">
 
-<p>
-1. Complete: I ___ from Mozambique.
-</p>
+<p>1. What color is "red"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q1" value="a">
-am
-</label>
-
-<label>
-<input type="radio" name="q1" value="b">
-is
-</label>
-
-<label>
-<input type="radio" name="q1" value="c">
-are
-</label>
+<label><input type="radio" name="q1" value="a"> Vermelho</label>
+<label><input type="radio" name="q1" value="b"> Azul</label>
+<label><input type="radio" name="q1" value="c"> Verde</label>
 
 </div>
 
@@ -1602,26 +1493,13 @@ are
 
 <div class="quiz-question">
 
-<p>
-2. Complete: I ___ in Maputo.
-</p>
+<p>2. What color is "blue"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q2" value="a">
-live
-</label>
-
-<label>
-<input type="radio" name="q2" value="b">
-lives
-</label>
-
-<label>
-<input type="radio" name="q2" value="c">
-living
-</label>
+<label><input type="radio" name="q2" value="a"> Rosa</label>
+<label><input type="radio" name="q2" value="b"> Azul</label>
+<label><input type="radio" name="q2" value="c"> Preto</label>
 
 </div>
 
@@ -1630,26 +1508,13 @@ living
 
 <div class="quiz-question">
 
-<p>
-3. How do you ask someone's age?
-</p>
+<p>3. Complete: It is ______.</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q3" value="a">
-How old are you?
-</label>
-
-<label>
-<input type="radio" name="q3" value="b">
-Where do you live?
-</label>
-
-<label>
-<input type="radio" name="q3" value="c">
-What's your name?
-</label>
+<label><input type="radio" name="q3" value="a"> green</label>
+<label><input type="radio" name="q3" value="b"> table</label>
+<label><input type="radio" name="q3" value="c"> school</label>
 
 </div>
 
@@ -1658,26 +1523,13 @@ What's your name?
 
 <div class="quiz-question">
 
-<p>
-4. What does "country" mean?
-</p>
+<p>4. What is "yellow"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q4" value="a">
-Cidade
-</label>
-
-<label>
-<input type="radio" name="q4" value="b">
-País
-</label>
-
-<label>
-<input type="radio" name="q4" value="c">
-Idade
-</label>
+<label><input type="radio" name="q4" value="a"> Amarelo</label>
+<label><input type="radio" name="q4" value="b"> Branco</label>
+<label><input type="radio" name="q4" value="c"> Roxo</label>
 
 </div>
 
@@ -1686,26 +1538,13 @@ Idade
 
 <div class="quiz-question">
 
-<p>
-5. Complete: I am ___ Mozambique.
-</p>
+<p>5. Choose the correct question.</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q5" value="a">
-from
-</label>
-
-<label>
-<input type="radio" name="q5" value="b">
-at
-</label>
-
-<label>
-<input type="radio" name="q5" value="c">
-on
-</label>
+<label><input type="radio" name="q5" value="a"> What color is it?</label>
+<label><input type="radio" name="q5" value="b"> What it color?</label>
+<label><input type="radio" name="q5" value="c"> Color what it?</label>
 
 </div>
 
@@ -1714,26 +1553,13 @@ on
 
 <div class="quiz-question">
 
-<p>
-6. "How old are you?" asks about:
-</p>
+<p>6. What is "black"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q6" value="a">
-Your age
-</label>
-
-<label>
-<input type="radio" name="q6" value="b">
-Your country
-</label>
-
-<label>
-<input type="radio" name="q6" value="c">
-Your name
-</label>
+<label><input type="radio" name="q6" value="a"> Branco</label>
+<label><input type="radio" name="q6" value="b"> Preto</label>
+<label><input type="radio" name="q6" value="c"> Laranja</label>
 
 </div>
 
@@ -1742,26 +1568,13 @@ Your name
 
 <div class="quiz-question">
 
-<p>
-7. What does "nationality" mean?
-</p>
+<p>7. Complete: My favorite color is ______.</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q7" value="a">
-Nacionalidade
-</label>
-
-<label>
-<input type="radio" name="q7" value="b">
-Endereço
-</label>
-
-<label>
-<input type="radio" name="q7" value="c">
-Número
-</label>
+<label><input type="radio" name="q7" value="a"> blue</label>
+<label><input type="radio" name="q7" value="b"> chair</label>
+<label><input type="radio" name="q7" value="c"> house</label>
 
 </div>
 
@@ -1770,26 +1583,13 @@ Número
 
 <div class="quiz-question">
 
-<p>
-8. Choose the correct sentence.
-</p>
+<p>8. What is "pink"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q8" value="a">
-I live in Maputo.
-</label>
-
-<label>
-<input type="radio" name="q8" value="b">
-I lives in Maputo.
-</label>
-
-<label>
-<input type="radio" name="q8" value="c">
-I living Maputo.
-</label>
+<label><input type="radio" name="q8" value="a"> Rosa</label>
+<label><input type="radio" name="q8" value="b"> Castanho</label>
+<label><input type="radio" name="q8" value="c"> Verde</label>
 
 </div>
 
@@ -1798,27 +1598,13 @@ I living Maputo.
 
 <div class="quiz-question">
 
-<p>
-9. What is the correct answer?
-Where do you live?
-</p>
+<p>9. Choose the correct sentence.</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q9" value="a">
-I am eighteen.
-</label>
-
-<label>
-<input type="radio" name="q9" value="b">
-I live in Maputo.
-</label>
-
-<label>
-<input type="radio" name="q9" value="c">
-I am Mozambican.
-</label>
+<label><input type="radio" name="q9" value="a"> This is a red car.</label>
+<label><input type="radio" name="q9" value="b"> This red is a car.</label>
+<label><input type="radio" name="q9" value="c"> Red this car is.</label>
 
 </div>
 
@@ -1827,26 +1613,13 @@ I am Mozambican.
 
 <div class="quiz-question">
 
-<p>
-10. Choose the correct sentence.
-</p>
+<p>10. What is "purple"?</p>
 
 <div class="quiz-options">
 
-<label>
-<input type="radio" name="q10" value="a">
-I am Mozambican.
-</label>
-
-<label>
-<input type="radio" name="q10" value="b">
-I am Mozambique.
-</label>
-
-<label>
-<input type="radio" name="q10" value="c">
-I Mozambican am.
-</label>
+<label><input type="radio" name="q10" value="a"> Roxo / Púrpura</label>
+<label><input type="radio" name="q10" value="b"> Amarelo</label>
+<label><input type="radio" name="q10" value="c"> Cinzento</label>
 
 </div>
 
@@ -1864,7 +1637,6 @@ onclick="submitQuiz()">
 
 </form>
 
-
 <div id="quizResult"></div>
 
 </section>
@@ -1875,49 +1647,49 @@ onclick="submitQuiz()">
 <h2>🔄 Daily Review</h2>
 
 <p>
-Review the most important points from Lesson 2.
+Review the most important points from Lesson 5.
 </p>
 
-<div class="review-list">
+<div class="review-grid">
 
 <div class="review-item">
-🙋 <strong>Name</strong> = Nome
+🔴 <strong>Red</strong> = Vermelho
 </div>
 
 <div class="review-item">
-🎂 <strong>Age</strong> = Idade
+🔵 <strong>Blue</strong> = Azul
 </div>
 
 <div class="review-item">
-🌍 <strong>Country</strong> = País
+🟢 <strong>Green</strong> = Verde
 </div>
 
 <div class="review-item">
-🌎 <strong>Nationality</strong> = Nacionalidade
+🟡 <strong>Yellow</strong> = Amarelo
 </div>
 
 <div class="review-item">
-🏙️ <strong>City</strong> = Cidade
+⚫ <strong>Black</strong> = Preto
 </div>
 
 <div class="review-item">
-🏠 <strong>Address</strong> = Endereço
+⚪ <strong>White</strong> = Branco
 </div>
 
 <div class="review-item">
-📱 <strong>Phone number</strong> = Número de telefone
+🟠 <strong>Orange</strong> = Laranja
 </div>
 
 <div class="review-item">
-📧 <strong>Email</strong> = E-mail
+🟣 <strong>Purple</strong> = Roxo / Púrpura
 </div>
 
 <div class="review-item">
-🌍 <strong>I am from...</strong> = Eu sou de...
+🩷 <strong>Pink</strong> = Rosa
 </div>
 
 <div class="review-item">
-🏠 <strong>I live in...</strong> = Eu moro em...
+🟤 <strong>Brown</strong> = Castanho / Marrom
 </div>
 
 </div>
@@ -1926,43 +1698,20 @@ Review the most important points from Lesson 2.
 
 <h3>⭐ Key Sentences</h3>
 
-<p>
-My name is José.
-</p>
+<p>What color is it?</p>
 
-<p>
-I am twenty years old.
-</p>
+<p>It is blue.</p>
 
-<p>
-I am from Mozambique.
-</p>
+<p>My favorite color is green.</p>
 
-<p>
-I am Mozambican.
-</p>
+<p>This is a red car.</p>
 
-<p>
-I live in Maputo.
-</p>
-
-<p>
-How old are you?
-</p>
-
-<p>
-Where do you live?
-</p>
-
-<p>
-What is your nationality?
-</p>
+<p>What is your favorite color?</p>
 
 <br>
 
-<button
-class="listen-btn"
-onclick="speak('My name is José. I am twenty years old. I am from Mozambique. I am Mozambican. I live in Maputo. How old are you? Where do you live? What is your nationality?')">
+<button class="listen-btn"
+onclick="speak('What color is it? It is blue. My favorite color is green. This is a red car. What is your favorite color?')">
 
 🔊 Listen
 
@@ -1973,27 +1722,21 @@ onclick="speak('My name is José. I am twenty years old. I am from Mozambique. I
 
 <section class="card complete-box">
 
-<h2>
-🏆 Lesson 2 Complete
-</h2>
+<h2>🏆 Lesson 5 Complete</h2>
 
 <p>
-Finished all the activities?
-Save your lesson progress.
+Finished all the activities? Save your lesson progress.
 </p>
 
-<button
-class="complete-btn"
+<button class="complete-btn"
 onclick="completeLesson()">
 
-✅ Complete Lesson 2
+✅ Complete Lesson 5
 
 </button>
 
 <div id="completeMessage">
-
-🎉 Lesson 2 completed successfully!
-
+🎉 Lesson 5 completed successfully!
 </div>
 
 </section>
@@ -2001,11 +1744,11 @@ onclick="completeLesson()">
 
 <div class="page-navigation">
 
-<a href="lesson1.html">
+<a href="lesson4.html">
 ← Previous Lesson
 </a>
 
-<a href="lesson3.html">
+<a href="lesson6.html">
 Next Lesson →
 </a>
 
@@ -2029,7 +1772,7 @@ Speak English with Confidence
 </p>
 
 <p>
-Day 2 / Lesson 2
+Day 5 / Lesson 5
 </p>
 
 </footer>
@@ -2041,9 +1784,7 @@ function speak(text){
 
     if(!("speechSynthesis" in window)){
 
-        alert(
-            "Audio is not supported by this browser."
-        );
+        alert("Audio is not supported by this browser.");
 
         return;
     }
@@ -2054,9 +1795,7 @@ function speak(text){
         new SpeechSynthesisUtterance(text);
 
     speech.lang="en-US";
-
     speech.rate=0.88;
-
     speech.pitch=1;
 
     window.speechSynthesis.speak(speech);
@@ -2066,51 +1805,26 @@ function speak(text){
 function speakConversation(){
 
     speak(
-
-        "José: Hello! What's your name? " +
-
-        "Maria: Hi! My name is Maria. What's your name? " +
-
-        "José: My name is José. Nice to meet you. " +
-
-        "Maria: Nice to meet you too. " +
-
-        "José: Where are you from? " +
-
-        "Maria: I am from Mozambique. " +
-
-        "José: Where do you live? " +
-
-        "Maria: I live in Maputo. " +
-
-        "José: How old are you? " +
-
-        "Maria: I am eighteen years old. How old are you? " +
-
-        "José: I am twenty years old. " +
-
-        "Maria: What is your nationality? " +
-
-        "José: I am Mozambican. " +
-
-        "Maria: That's great! " +
-
-        "José: It was nice talking to you. " +
-
-        "Maria: Nice talking to you too. See you later!"
-
+        "José: Hi, Maria! What color is your bag? " +
+        "Maria: It is blue. " +
+        "José: Nice! Blue is a beautiful color. " +
+        "Maria: Thank you! What is your favorite color? " +
+        "José: My favorite color is green. " +
+        "Maria: Green? That's nice! " +
+        "José: Yes. What color is your phone? " +
+        "Maria: My phone is black. " +
+        "José: Is your notebook red? " +
+        "Maria: No, it isn't. It is yellow. " +
+        "José: I like yellow too. " +
+        "Maria: Great! We both like bright colors."
     );
 
 }
 
 
-function checkAnswer(
-    button,
-    correct,
-    answerId
-){
+function checkAnswer(correct,answerId){
 
-    const answer =
+    const answer=
         document.getElementById(answerId);
 
     answer.style.display="block";
@@ -2146,35 +1860,30 @@ function submitQuiz(){
     const answers={
 
         q1:"a",
-        q2:"a",
+        q2:"b",
         q3:"a",
-        q4:"b",
+        q4:"a",
         q5:"a",
-        q6:"a",
+        q6:"b",
         q7:"a",
         q8:"a",
-        q9:"b",
+        q9:"a",
         q10:"a"
 
     };
 
     let score=0;
 
-    for(
-        let question in answers
-    ){
+    for(let question in answers){
 
         const selected=
             document.querySelector(
-                'input[name="'+
-                question+
-                '"]:checked'
+                'input[name="'+question+'"]:checked'
             );
 
         if(
             selected &&
-            selected.value===
-            answers[question]
+            selected.value===answers[question]
         ){
 
             score++;
@@ -2183,18 +1892,14 @@ function submitQuiz(){
 
     }
 
-    const percentage=
-        score*10;
+    const percentage=score*10;
 
     const result=
-        document.getElementById(
-            "quizResult"
-        );
+        document.getElementById("quizResult");
 
     result.style.display="block";
 
     result.innerHTML=
-
         "🎯 Your Score: "+
         score+
         "/10 ("+
@@ -2209,7 +1914,7 @@ function submitQuiz(){
         );
 
     localStorage.setItem(
-        "lesson2Score",
+        "lesson5Score",
         percentage
     );
 
@@ -2219,24 +1924,18 @@ function submitQuiz(){
 function completeLesson(){
 
     const message=
-        document.getElementById(
-            "completeMessage"
-        );
+        document.getElementById("completeMessage");
 
     message.style.display="block";
 
     let completed=
         JSON.parse(
-            localStorage.getItem(
-                "completedLessons"
-            )
+            localStorage.getItem("completedLessons")
         ) || [];
 
-    if(
-        !completed.includes(2)
-    ){
+    if(!completed.includes(5)){
 
-        completed.push(2);
+        completed.push(5);
 
     }
 
@@ -2254,13 +1953,11 @@ function updateProgress(){
 
     const completed=
         JSON.parse(
-            localStorage.getItem(
-                "completedLessons"
-            )
+            localStorage.getItem("completedLessons")
         ) || [];
 
     const isComplete=
-        completed.includes(2);
+        completed.includes(5);
 
     const percentage=
         isComplete ? 100 : 0;
@@ -2279,16 +1976,6 @@ function updateProgress(){
 
 
 updateProgress();
-
-
-window.addEventListener(
-    "beforeunload",
-    function(){
-
-        window.speechSynthesis.cancel();
-
-    }
-);
 
 </script>
 

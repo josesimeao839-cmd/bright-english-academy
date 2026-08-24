@@ -5,13 +5,12 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-      content="Bright English Academy - Day 2 Lesson 2 - Personal Information">
+      content="Bright English Academy - Day 4 Lesson 4 - Days and Months">
 
-<title>Lesson 2 — Personal Information | Bright English Academy</title>
+<title>Lesson 4 — Days & Months | Bright English Academy</title>
 
 <style>
 
@@ -25,7 +24,7 @@ html{
 
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
     color:#17233c;
     line-height:1.6;
@@ -45,8 +44,8 @@ header{
     max-width:1100px;
     margin:auto;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
     gap:20px;
 }
 
@@ -159,10 +158,6 @@ nav a:hover{
     font-weight:bold;
 }
 
-.lesson-nav a:hover{
-    background:#d7eaff;
-}
-
 h2{
     color:#0b4f9c;
     font-size:26px;
@@ -171,10 +166,13 @@ h2{
 
 h3{
     color:#0b4f9c;
-    margin-bottom:8px;
 }
 
-.objective-grid{
+.objective-grid,
+.vocabulary-grid,
+.day-grid,
+.month-grid,
+.review-list{
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:15px;
@@ -193,12 +191,6 @@ h3{
     margin-bottom:5px;
 }
 
-.vocabulary-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:15px;
-}
-
 .word-card{
     background:#f8fbff;
     border:1px solid #dfe8f3;
@@ -207,7 +199,7 @@ h3{
 }
 
 .word{
-    font-size:20px;
+    font-size:22px;
     font-weight:bold;
     color:#0b4f9c;
 }
@@ -215,6 +207,25 @@ h3{
 .translation{
     color:#64748b;
     margin:5px 0 12px;
+}
+
+.day-card,
+.month-card{
+    background:#f8fbff;
+    border:1px solid #dfe8f3;
+    padding:17px;
+    border-radius:12px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
+
+.day-name,
+.month-name{
+    font-size:20px;
+    font-weight:bold;
+    color:#0b4f9c;
 }
 
 .listen-btn{
@@ -241,7 +252,7 @@ h3{
 
 .example{
     background:white;
-    padding:13px;
+    padding:15px;
     border-radius:8px;
     margin-top:12px;
 }
@@ -266,7 +277,7 @@ h3{
     font-weight:bold;
 }
 
-.student{
+.maria{
     color:#087f54;
     font-weight:bold;
 }
@@ -394,12 +405,6 @@ h3{
     font-size:18px;
 }
 
-.review-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-}
-
 .review-item{
     background:#f5f9ff;
     padding:13px;
@@ -464,6 +469,8 @@ footer strong{
 
     .objective-grid,
     .vocabulary-grid,
+    .day-grid,
+    .month-grid,
     .review-list{
         grid-template-columns:1fr;
     }
@@ -476,6 +483,11 @@ footer strong{
         padding:21px;
     }
 
+    .day-card,
+    .month-card{
+        align-items:flex-start;
+    }
+
     .page-navigation{
         flex-direction:column;
     }
@@ -483,6 +495,7 @@ footer strong{
     .page-navigation a{
         text-align:center;
     }
+
 }
 
 </style>
@@ -520,15 +533,15 @@ footer strong{
 <section class="card hero">
 
 <span class="day-badge">
-📚 Day 2 / Lesson 2
+📚 Day 4 / Lesson 4
 </span>
 
 <h1>
-🙋 Personal Information
+📅 Days & Months
 </h1>
 
 <p>
-Learn how to give and ask for basic personal information in English.
+Learn the days of the week, months of the year and how to talk about dates.
 </p>
 
 <div class="progress-area">
@@ -557,6 +570,8 @@ Learn how to give and ask for basic personal information in English.
 <section class="lesson-nav">
 
 <a href="#objectives">Objectives</a>
+<a href="#days">Days</a>
+<a href="#months">Months</a>
 <a href="#vocabulary">Vocabulary</a>
 <a href="#grammar">Grammar</a>
 <a href="#pronunciation">Pronunciation</a>
@@ -582,34 +597,277 @@ By the end of this lesson, you will be able to:
 <div class="objective-grid">
 
 <div class="objective">
-<strong>🙋 Personal Information</strong>
-Give basic information about yourself.
+<strong>📅 Days</strong>
+Name the seven days of the week.
 </div>
 
 <div class="objective">
-<strong>🎂 Age</strong>
-Say and ask someone's age.
+<strong>🗓️ Months</strong>
+Name the twelve months of the year.
 </div>
 
 <div class="objective">
-<strong>🌍 Nationality</strong>
-Talk about countries and nationalities.
+<strong>📍 Dates</strong>
+Talk about simple dates.
 </div>
 
 <div class="objective">
-<strong>🏙️ Where You Live</strong>
-Say where you live.
+<strong>⏰ Time</strong>
+Talk about when events happen.
 </div>
 
 <div class="objective">
-<strong>📱 Contact Information</strong>
-Ask for basic contact information.
+<strong>❓ Questions</strong>
+Ask when something happens.
 </div>
 
 <div class="objective">
-<strong>💬 Questions</strong>
-Ask simple questions about another person.
+<strong>🗣️ Speaking</strong>
+Use days and months in everyday English.
 </div>
+
+</div>
+
+</section>
+
+
+<section id="days" class="card">
+
+<h2>📅 Days of the Week</h2>
+
+<p>
+Learn the seven days of the week.
+</p>
+
+<div class="day-grid">
+
+<div class="day-card">
+<div>
+<div class="day-name">Monday</div>
+Segunda-feira
+</div>
+<button class="listen-btn"
+onclick="speak('Monday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Tuesday</div>
+Terça-feira
+</div>
+<button class="listen-btn"
+onclick="speak('Tuesday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Wednesday</div>
+Quarta-feira
+</div>
+<button class="listen-btn"
+onclick="speak('Wednesday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Thursday</div>
+Quinta-feira
+</div>
+<button class="listen-btn"
+onclick="speak('Thursday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Friday</div>
+Sexta-feira
+</div>
+<button class="listen-btn"
+onclick="speak('Friday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Saturday</div>
+Sábado
+</div>
+<button class="listen-btn"
+onclick="speak('Saturday')">🔊 Listen</button>
+</div>
+
+<div class="day-card">
+<div>
+<div class="day-name">Sunday</div>
+Domingo
+</div>
+<button class="listen-btn"
+onclick="speak('Sunday')">🔊 Listen</button>
+</div>
+
+</div>
+
+<br>
+
+<div class="example">
+
+<strong>Days in order:</strong>
+
+<br><br>
+
+Monday → Tuesday → Wednesday → Thursday → Friday → Saturday → Sunday
+
+<br><br>
+
+<button class="listen-btn"
+onclick="speak('Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.')">
+
+🔊 Listen
+
+</button>
+
+</div>
+
+</section>
+
+
+<section id="months" class="card">
+
+<h2>🗓️ Months of the Year</h2>
+
+<p>
+Learn the twelve months of the year.
+</p>
+
+<div class="month-grid">
+
+<div class="month-card">
+<div>
+<div class="month-name">January</div>
+Janeiro
+</div>
+<button class="listen-btn"
+onclick="speak('January')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">February</div>
+Fevereiro
+</div>
+<button class="listen-btn"
+onclick="speak('February')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">March</div>
+Março
+</div>
+<button class="listen-btn"
+onclick="speak('March')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">April</div>
+Abril
+</div>
+<button class="listen-btn"
+onclick="speak('April')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">May</div>
+Maio
+</div>
+<button class="listen-btn"
+onclick="speak('May')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">June</div>
+Junho
+</div>
+<button class="listen-btn"
+onclick="speak('June')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">July</div>
+Julho
+</div>
+<button class="listen-btn"
+onclick="speak('July')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">August</div>
+Agosto
+</div>
+<button class="listen-btn"
+onclick="speak('August')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">September</div>
+Setembro
+</div>
+<button class="listen-btn"
+onclick="speak('September')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">October</div>
+Outubro
+</div>
+<button class="listen-btn"
+onclick="speak('October')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">November</div>
+Novembro
+</div>
+<button class="listen-btn"
+onclick="speak('November')">🔊 Listen</button>
+</div>
+
+<div class="month-card">
+<div>
+<div class="month-name">December</div>
+Dezembro
+</div>
+<button class="listen-btn"
+onclick="speak('December')">🔊 Listen</button>
+</div>
+
+</div>
+
+<br>
+
+<div class="example">
+
+<strong>Months in order:</strong>
+
+<br><br>
+
+January → February → March → April → May → June → July → August → September → October → November → December
+
+<br><br>
+
+<button class="listen-btn"
+onclick="speak('January, February, March, April, May, June, July, August, September, October, November, December.')">
+
+🔊 Listen
+
+</button>
 
 </div>
 
@@ -618,104 +876,135 @@ Ask simple questions about another person.
 
 <section id="vocabulary" class="card">
 
-<h2>📚 Personal Information Vocabulary</h2>
+<h2>📚 Calendar Vocabulary</h2>
 
 <div class="vocabulary-grid">
 
-
 <div class="word-card">
-<div class="word">Name</div>
-<div class="translation">Nome</div>
+
+<div class="word">Day</div>
+
+<div class="translation">Dia</div>
+
 <button class="listen-btn"
-onclick="speak('Name')">🔊 Listen</button>
+onclick="speak('Day')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Age</div>
-<div class="translation">Idade</div>
+
+<div class="word">Week</div>
+
+<div class="translation">Semana</div>
+
 <button class="listen-btn"
-onclick="speak('Age')">🔊 Listen</button>
+onclick="speak('Week')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Country</div>
-<div class="translation">País</div>
+
+<div class="word">Month</div>
+
+<div class="translation">Mês</div>
+
 <button class="listen-btn"
-onclick="speak('Country')">🔊 Listen</button>
+onclick="speak('Month')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Nationality</div>
-<div class="translation">Nacionalidade</div>
+
+<div class="word">Year</div>
+
+<div class="translation">Ano</div>
+
 <button class="listen-btn"
-onclick="speak('Nationality')">🔊 Listen</button>
+onclick="speak('Year')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">City</div>
-<div class="translation">Cidade</div>
+
+<div class="word">Today</div>
+
+<div class="translation">Hoje</div>
+
 <button class="listen-btn"
-onclick="speak('City')">🔊 Listen</button>
+onclick="speak('Today')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Address</div>
-<div class="translation">Endereço</div>
+
+<div class="word">Tomorrow</div>
+
+<div class="translation">Amanhã</div>
+
 <button class="listen-btn"
-onclick="speak('Address')">🔊 Listen</button>
+onclick="speak('Tomorrow')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Phone number</div>
-<div class="translation">Número de telefone</div>
+
+<div class="word">Yesterday</div>
+
+<div class="translation">Ontem</div>
+
 <button class="listen-btn"
-onclick="speak('Phone number')">🔊 Listen</button>
+onclick="speak('Yesterday')">
+
+🔊 Listen
+
+</button>
+
 </div>
 
 
 <div class="word-card">
-<div class="word">Email</div>
-<div class="translation">E-mail</div>
+
+<div class="word">Weekend</div>
+
+<div class="translation">Fim de semana</div>
+
 <button class="listen-btn"
-onclick="speak('Email')">🔊 Listen</button>
-</div>
+onclick="speak('Weekend')">
 
+🔊 Listen
 
-<div class="word-card">
-<div class="word">Student</div>
-<div class="translation">Estudante</div>
-<button class="listen-btn"
-onclick="speak('Student')">🔊 Listen</button>
-</div>
+</button>
 
-
-<div class="word-card">
-<div class="word">Teacher</div>
-<div class="translation">Professor / Professora</div>
-<button class="listen-btn"
-onclick="speak('Teacher')">🔊 Listen</button>
-</div>
-
-
-<div class="word-card">
-<div class="word">From</div>
-<div class="translation">De</div>
-<button class="listen-btn"
-onclick="speak('From')">🔊 Listen</button>
-</div>
-
-
-<div class="word-card">
-<div class="word">Live</div>
-<div class="translation">Morar / Viver</div>
-<button class="listen-btn"
-onclick="speak('Live')">🔊 Listen</button>
 </div>
 
 </div>
@@ -725,32 +1014,44 @@ onclick="speak('Live')">🔊 Listen</button>
 
 <section id="grammar" class="card">
 
-<h2>📚 Grammar — Personal Information</h2>
+<h2>📚 Grammar — Talking About Days & Months</h2>
 
 
 <div class="grammar-box">
 
-<h3>1️⃣ I am...</h3>
+<h3>1️⃣ What day is it?</h3>
 
 <p>
-Use <strong>I am</strong> to give information about yourself.
+Use this question to ask about the day.
 </p>
 
 <div class="example">
 
 <span class="english">
-I am 20 years old.
+What day is it?
 </span>
 
 <br>
 
-Eu tenho 20 anos.
+Que dia é hoje?
+
+<br><br>
+
+<span class="english">
+It is Monday.
+</span>
+
+<br>
+
+É segunda-feira.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am twenty years old.')">
+onclick="speak('What day is it? It is Monday.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -760,27 +1061,35 @@ onclick="speak('I am twenty years old.')">
 
 <div class="grammar-box">
 
-<h3>2️⃣ I am from...</h3>
-
-<p>
-Use <strong>I am from</strong> to say your country or place of origin.
-</p>
+<h3>2️⃣ What month is it?</h3>
 
 <div class="example">
 
 <span class="english">
-I am from Mozambique.
+What month is it?
 </span>
 
 <br>
 
-Eu sou de Moçambique.
+Que mês é?
+
+<br><br>
+
+<span class="english">
+It is August.
+</span>
+
+<br>
+
+É agosto.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am from Mozambique.')">
+onclick="speak('What month is it? It is August.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -790,27 +1099,45 @@ onclick="speak('I am from Mozambique.')">
 
 <div class="grammar-box">
 
-<h3>3️⃣ I live in...</h3>
-
-<p>
-Use <strong>I live in</strong> to say where you live.
-</p>
+<h3>3️⃣ Today, Tomorrow and Yesterday</h3>
 
 <div class="example">
 
 <span class="english">
-I live in Maputo.
+Today is Monday.
 </span>
 
 <br>
 
-Eu moro em Maputo.
+Hoje é segunda-feira.
+
+<br><br>
+
+<span class="english">
+Tomorrow is Tuesday.
+</span>
+
+<br>
+
+Amanhã é terça-feira.
+
+<br><br>
+
+<span class="english">
+Yesterday was Sunday.
+</span>
+
+<br>
+
+Ontem foi domingo.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I live in Maputo.')">
+onclick="speak('Today is Monday. Tomorrow is Tuesday. Yesterday was Sunday.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -820,37 +1147,35 @@ onclick="speak('I live in Maputo.')">
 
 <div class="grammar-box">
 
-<h3>4️⃣ What is your nationality?</h3>
-
-<p>
-Use this question to ask someone's nationality.
-</p>
+<h3>4️⃣ Talking About Birthdays</h3>
 
 <div class="example">
 
 <span class="english">
-What is your nationality?
+My birthday is in May.
 </span>
 
 <br>
 
-Qual é a tua nacionalidade?
+O meu aniversário é em maio.
 
 <br><br>
 
 <span class="english">
-I am Mozambican.
+My birthday is on Monday.
 </span>
 
 <br>
 
-Eu sou moçambicano / moçambicana.
+O meu aniversário é na segunda-feira.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('What is your nationality? I am Mozambican.')">
+onclick="speak('My birthday is in May. My birthday is on Monday.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -860,77 +1185,35 @@ onclick="speak('What is your nationality? I am Mozambican.')">
 
 <div class="grammar-box">
 
-<h3>5️⃣ How old are you?</h3>
-
-<p>
-Use this question to ask someone's age.
-</p>
+<h3>5️⃣ Asking When Something Happens</h3>
 
 <div class="example">
 
 <span class="english">
-How old are you?
+When is your English class?
 </span>
 
 <br>
 
-Quantos anos tens?
+Quando é a tua aula de inglês?
 
 <br><br>
 
 <span class="english">
-I am eighteen years old.
+It is on Friday.
 </span>
 
 <br>
 
-Eu tenho dezoito anos.
+É na sexta-feira.
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('How old are you? I am eighteen years old.')">
+onclick="speak('When is your English class? It is on Friday.')">
+
 🔊 Listen
-</button>
 
-</div>
-
-</div>
-
-
-<div class="grammar-box">
-
-<h3>6️⃣ Where do you live?</h3>
-
-<p>
-Use this question to ask where someone lives.
-</p>
-
-<div class="example">
-
-<span class="english">
-Where do you live?
-</span>
-
-<br>
-
-Onde moras?
-
-<br><br>
-
-<span class="english">
-I live in Maputo.
-</span>
-
-<br>
-
-Eu moro em Maputo.
-
-<br><br>
-
-<button class="listen-btn"
-onclick="speak('Where do you live? I live in Maputo.')">
-🔊 Listen
 </button>
 
 </div>
@@ -948,18 +1231,19 @@ onclick="speak('Where do you live? I live in Maputo.')">
 Listen and repeat.
 </p>
 
-
 <div class="example">
 
 <strong>
-My name is José.
+Monday, Tuesday, Wednesday.
 </strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('My name is José.')">
+onclick="speak('Monday, Tuesday, Wednesday.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -968,14 +1252,16 @@ onclick="speak('My name is José.')">
 <div class="example">
 
 <strong>
-I am from Mozambique.
+Thursday, Friday, Saturday, Sunday.
 </strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I am from Mozambique.')">
+onclick="speak('Thursday, Friday, Saturday, Sunday.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -984,14 +1270,16 @@ onclick="speak('I am from Mozambique.')">
 <div class="example">
 
 <strong>
-I live in Maputo.
+January, February, March, April.
 </strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('I live in Maputo.')">
+onclick="speak('January, February, March, April.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -1000,14 +1288,16 @@ onclick="speak('I live in Maputo.')">
 <div class="example">
 
 <strong>
-How old are you?
+May, June, July, August.
 </strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('How old are you?')">
+onclick="speak('May, June, July, August.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -1016,14 +1306,16 @@ onclick="speak('How old are you?')">
 <div class="example">
 
 <strong>
-What is your nationality?
+September, October, November, December.
 </strong>
 
 <br><br>
 
 <button class="listen-btn"
-onclick="speak('What is your nationality?')">
+onclick="speak('September, October, November, December.')">
+
 🔊 Listen
+
 </button>
 
 </div>
@@ -1036,89 +1328,79 @@ onclick="speak('What is your nationality?')">
 <h2>💬 Real-life Conversation</h2>
 
 <p>
-José and Maria are meeting and sharing personal information.
+José and Maria are talking about days, months and birthdays.
 </p>
 
 <div class="dialogue">
 
 <p>
 <span class="jose">José:</span>
-Hello! What's your name?
+Hi, Maria! What day is it today?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-Hi! My name is Maria. What's your name?
-</p>
-
-<p>
-<span class="jose">José:</span>
-My name is José. Nice to meet you.
-</p>
-
-<p>
-<span class="student">Maria:</span>
-Nice to meet you too.
+<span class="maria">Maria:</span>
+Today is Monday.
 </p>
 
 <p>
 <span class="jose">José:</span>
-Where are you from?
+Oh, really? What month is it?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-I am from Mozambique.
-</p>
-
-<p>
-<span class="jose">José:</span>
-Where do you live?
-</p>
-
-<p>
-<span class="student">Maria:</span>
-I live in Maputo.
+<span class="maria">Maria:</span>
+It is August.
 </p>
 
 <p>
 <span class="jose">José:</span>
-How old are you?
+When is your birthday?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-I am eighteen years old. How old are you?
-</p>
-
-<p>
-<span class="jose">José:</span>
-I am twenty years old.
-</p>
-
-<p>
-<span class="student">Maria:</span>
-What is your nationality?
+<span class="maria">Maria:</span>
+My birthday is in December.
 </p>
 
 <p>
 <span class="jose">José:</span>
-I am Mozambican.
+That's nice! What day is your birthday?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-That's great!
+<span class="maria">Maria:</span>
+It is on Friday this year.
 </p>
 
 <p>
 <span class="jose">José:</span>
-It was nice talking to you.
+Great! Are you having a party?
 </p>
 
 <p>
-<span class="student">Maria:</span>
-Nice talking to you too. See you later!
+<span class="maria">Maria:</span>
+Yes, I am.
+</p>
+
+<p>
+<span class="jose">José:</span>
+What day is your English class?
+</p>
+
+<p>
+<span class="maria">Maria:</span>
+My English class is on Wednesday.
+</p>
+
+<p>
+<span class="jose">José:</span>
+Excellent! See you on Wednesday.
+</p>
+
+<p>
+<span class="maria">Maria:</span>
+See you!
 </p>
 
 </div>
@@ -1127,7 +1409,9 @@ Nice talking to you too. See you later!
 
 <button class="listen-btn"
 onclick="speakConversation()">
+
 🔊 Listen to Conversation
+
 </button>
 
 </section>
@@ -1140,24 +1424,24 @@ onclick="speakConversation()">
 
 <div class="exercise">
 
-<strong>1. Complete:</strong>
+<strong>1. Choose the correct answer:</strong>
 
 <p>
-I ___ from Mozambique.
+What day comes after Monday?
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer1')">
-am
+<button onclick="checkAnswer(true,'answer1')">
+Tuesday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer1')">
-is
+<button onclick="checkAnswer(false,'answer1')">
+Sunday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer1')">
-are
+<button onclick="checkAnswer(false,'answer1')">
+Friday
 </button>
 
 </div>
@@ -1169,24 +1453,24 @@ are
 
 <div class="exercise">
 
-<strong>2. Complete:</strong>
+<strong>2. Choose the correct answer:</strong>
 
 <p>
-I ___ in Maputo.
+What day comes before Friday?
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer2')">
-live
+<button onclick="checkAnswer(false,'answer2')">
+Monday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer2')">
-lives
+<button onclick="checkAnswer(true,'answer2')">
+Thursday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer2')">
-living
+<button onclick="checkAnswer(false,'answer2')">
+Sunday
 </button>
 
 </div>
@@ -1198,24 +1482,24 @@ living
 
 <div class="exercise">
 
-<strong>3. Choose the correct question:</strong>
+<strong>3. Complete:</strong>
 
 <p>
-You want to ask someone's age.
+Today is Monday. Tomorrow is ______.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer3')">
-How old are you?
+<button onclick="checkAnswer(true,'answer3')">
+Tuesday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer3')">
-Where do you live?
+<button onclick="checkAnswer(false,'answer3')">
+Sunday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer3')">
-What is your name?
+<button onclick="checkAnswer(false,'answer3')">
+Friday
 </button>
 
 </div>
@@ -1227,24 +1511,24 @@ What is your name?
 
 <div class="exercise">
 
-<strong>4. Choose the correct question:</strong>
+<strong>4. Complete:</strong>
 
 <p>
-You want to know where someone lives.
+Yesterday was Sunday. Today is ______.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,false,'answer4')">
-How old are you?
+<button onclick="checkAnswer(true,'answer4')">
+Monday
 </button>
 
-<button onclick="checkAnswer(this,true,'answer4')">
-Where do you live?
+<button onclick="checkAnswer(false,'answer4')">
+Tuesday
 </button>
 
-<button onclick="checkAnswer(this,false,'answer4')">
-What is your nationality?
+<button onclick="checkAnswer(false,'answer4')">
+Saturday
 </button>
 
 </div>
@@ -1256,24 +1540,20 @@ What is your nationality?
 
 <div class="exercise">
 
-<strong>5. Complete:</strong>
-
-<p>
-I am ___ Mozambique.
-</p>
+<strong>5. What is "January"?</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer5')">
-from
+<button onclick="checkAnswer(true,'answer5')">
+Janeiro
 </button>
 
-<button onclick="checkAnswer(this,false,'answer5')">
-in
+<button onclick="checkAnswer(false,'answer5')">
+Junho
 </button>
 
-<button onclick="checkAnswer(this,false,'answer5')">
-at
+<button onclick="checkAnswer(false,'answer5')">
+Julho
 </button>
 
 </div>
@@ -1285,24 +1565,20 @@ at
 
 <div class="exercise">
 
-<strong>6. Translate:</strong>
-
-<p>
-"I live in Maputo."
-</p>
+<strong>6. What is "December"?</strong>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer6')">
-Eu moro em Maputo.
+<button onclick="checkAnswer(false,'answer6')">
+Março
 </button>
 
-<button onclick="checkAnswer(this,false,'answer6')">
-Eu sou de Maputo.
+<button onclick="checkAnswer(true,'answer6')">
+Dezembro
 </button>
 
-<button onclick="checkAnswer(this,false,'answer6')">
-Eu tenho Maputo.
+<button onclick="checkAnswer(false,'answer6')">
+Setembro
 </button>
 
 </div>
@@ -1317,21 +1593,21 @@ Eu tenho Maputo.
 <strong>7. Complete:</strong>
 
 <p>
-How ___ are you?
+My birthday is ______ May.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer7')">
-old
+<button onclick="checkAnswer(true,'answer7')">
+in
 </button>
 
-<button onclick="checkAnswer(this,false,'answer7')">
-many
+<button onclick="checkAnswer(false,'answer7')">
+on
 </button>
 
-<button onclick="checkAnswer(this,false,'answer7')">
-much
+<button onclick="checkAnswer(false,'answer7')">
+at
 </button>
 
 </div>
@@ -1343,24 +1619,24 @@ much
 
 <div class="exercise">
 
-<strong>8. Choose the correct answer:</strong>
+<strong>8. Choose the correct question:</strong>
 
 <p>
-Where are you from?
+You want to ask about someone's English class.
 </p>
 
 <div class="options">
 
-<button onclick="checkAnswer(this,true,'answer8')">
-I am from Mozambique.
+<button onclick="checkAnswer(true,'answer8')">
+When is your English class?
 </button>
 
-<button onclick="checkAnswer(this,false,'answer8')">
-I am eighteen.
+<button onclick="checkAnswer(false,'answer8')">
+What is your English class?
 </button>
 
-<button onclick="checkAnswer(this,false,'answer8')">
-My name is Maria.
+<button onclick="checkAnswer(false,'answer8')">
+Where month is your class?
 </button>
 
 </div>
@@ -1368,7 +1644,6 @@ My name is Maria.
 <div id="answer8" class="answer"></div>
 
 </div>
-
 
 </section>
 
@@ -1383,11 +1658,10 @@ My name is Maria.
 <h3>Activity 1</h3>
 
 <p>
-Someone asks:
-<strong>Where are you from?</strong>
+What day comes after Wednesday?
 </p>
 
-<button onclick="activityAnswer('A good answer is: I am from Mozambique.')">
+<button onclick="activityAnswer('Thursday')">
 Check
 </button>
 
@@ -1399,16 +1673,10 @@ Check
 <h3>Activity 2</h3>
 
 <p>
-Build the sentence:
+What month comes after March?
 </p>
 
-<p>
-<strong>
-am / I / Mozambique / from
-</strong>
-</p>
-
-<button onclick="activityAnswer('Correct sentence: I am from Mozambique.')">
+<button onclick="activityAnswer('April')">
 Check
 </button>
 
@@ -1420,16 +1688,16 @@ Check
 <h3>Activity 3</h3>
 
 <p>
-Build the question:
+Build the sentence:
 </p>
 
 <p>
 <strong>
-old / are / How / you?
+is / Monday / Today
 </strong>
 </p>
 
-<button onclick="activityAnswer('Correct question: How old are you?')">
+<button onclick="activityAnswer('Correct sentence: Today is Monday.')">
 Check
 </button>
 
@@ -1441,15 +1709,46 @@ Check
 <h3>Activity 4</h3>
 
 <p>
-Someone says:
-<strong>I live in Maputo.</strong>
+Build the sentence:
 </p>
 
 <p>
-What information did they give?
+<strong>
+birthday / My / is / December / in
+</strong>
 </p>
 
-<button onclick="activityAnswer('They gave their city or place of residence.')">
+<button onclick="activityAnswer('Correct sentence: My birthday is in December.')">
+Check
+</button>
+
+</div>
+
+
+<div class="activity">
+
+<h3>Activity 5</h3>
+
+<p>
+What comes after November?
+</p>
+
+<button onclick="activityAnswer('December')">
+Check
+</button>
+
+</div>
+
+
+<div class="activity">
+
+<h3>Activity 6</h3>
+
+<p>
+What day comes before Sunday?
+</p>
+
+<button onclick="activityAnswer('Saturday')">
 Check
 </button>
 
@@ -1464,7 +1763,7 @@ Check
 
 <div class="challenge">
 
-<h3>🎤 Talk About Yourself</h3>
+<h3>🎤 Talk About Your Week</h3>
 
 <p>
 Speak for 30–60 seconds.
@@ -1476,22 +1775,22 @@ Try to answer:
 
 <ul>
 
-<li>What is your name?</li>
+<li>What day is it today?</li>
 
-<li>How old are you?</li>
+<li>What day is tomorrow?</li>
 
-<li>Where are you from?</li>
+<li>What day was yesterday?</li>
 
-<li>What is your nationality?</li>
+<li>What is your favorite day?</li>
 
-<li>Where do you live?</li>
+<li>When is your birthday?</li>
 
-<li>Are you a student?</li>
+<li>When is your English class?</li>
 
 </ul>
 
 <button class="listen-btn"
-onclick="speak('Hello. My name is José. I am twenty years old. I am from Mozambique. I am Mozambican. I live in Maputo. I am a student.')">
+onclick="speak('Today is Monday. Tomorrow is Tuesday. Yesterday was Sunday. My favorite day is Saturday. My birthday is in December. My English class is on Wednesday.')">
 
 🔊 Hear a Model
 
@@ -1509,26 +1808,26 @@ onclick="speak('Hello. My name is José. I am twenty years old. I am from Mozamb
 <div class="challenge">
 
 <p>
-Write 6–8 sentences about yourself.
+Write 6–8 sentences about your week and important dates.
 </p>
 
 <p>
-Try to include:
+Try to use:
 </p>
 
 <ul>
 
-<li>Your name</li>
+<li>Today is...</li>
 
-<li>Your age</li>
+<li>Tomorrow is...</li>
 
-<li>Your country</li>
+<li>Yesterday was...</li>
 
-<li>Your nationality</li>
+<li>My favorite day is...</li>
 
-<li>Your city</li>
+<li>My birthday is in...</li>
 
-<li>Your occupation or school</li>
+<li>My English class is on...</li>
 
 </ul>
 
@@ -1538,21 +1837,19 @@ Try to include:
 
 <br><br>
 
-Hello.
+Today is Monday.
 
-My name is José.
+Tomorrow is Tuesday.
 
-I am twenty years old.
+Yesterday was Sunday.
 
-I am from Mozambique.
+My favorite day is Saturday.
 
-I am Mozambican.
+My birthday is in December.
 
-I live in Maputo.
+My English class is on Wednesday.
 
-I am a student.
-
-Nice to meet you.
+I like Friday too.
 
 </div>
 
@@ -1575,24 +1872,24 @@ Choose the best answer.
 <div class="quiz-question">
 
 <p>
-1. Complete: I ___ from Mozambique.
+1. What day comes after Monday?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q1" value="a">
-am
+Tuesday
 </label>
 
 <label>
 <input type="radio" name="q1" value="b">
-is
+Sunday
 </label>
 
 <label>
 <input type="radio" name="q1" value="c">
-are
+Friday
 </label>
 
 </div>
@@ -1603,24 +1900,24 @@ are
 <div class="quiz-question">
 
 <p>
-2. Complete: I ___ in Maputo.
+2. What day comes before Sunday?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q2" value="a">
-live
+Friday
 </label>
 
 <label>
 <input type="radio" name="q2" value="b">
-lives
+Saturday
 </label>
 
 <label>
 <input type="radio" name="q2" value="c">
-living
+Monday
 </label>
 
 </div>
@@ -1631,24 +1928,24 @@ living
 <div class="quiz-question">
 
 <p>
-3. How do you ask someone's age?
+3. What month comes after March?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q3" value="a">
-How old are you?
+April
 </label>
 
 <label>
 <input type="radio" name="q3" value="b">
-Where do you live?
+August
 </label>
 
 <label>
 <input type="radio" name="q3" value="c">
-What's your name?
+May
 </label>
 
 </div>
@@ -1659,24 +1956,24 @@ What's your name?
 <div class="quiz-question">
 
 <p>
-4. What does "country" mean?
+4. What month comes before December?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q4" value="a">
-Cidade
+January
 </label>
 
 <label>
 <input type="radio" name="q4" value="b">
-País
+October
 </label>
 
 <label>
 <input type="radio" name="q4" value="c">
-Idade
+November
 </label>
 
 </div>
@@ -1687,24 +1984,24 @@ Idade
 <div class="quiz-question">
 
 <p>
-5. Complete: I am ___ Mozambique.
+5. What is "August"?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q5" value="a">
-from
+Agosto
 </label>
 
 <label>
 <input type="radio" name="q5" value="b">
-at
+Abril
 </label>
 
 <label>
 <input type="radio" name="q5" value="c">
-on
+Outubro
 </label>
 
 </div>
@@ -1715,24 +2012,24 @@ on
 <div class="quiz-question">
 
 <p>
-6. "How old are you?" asks about:
+6. Complete: Today is Monday. Tomorrow is ___.
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q6" value="a">
-Your age
+Sunday
 </label>
 
 <label>
 <input type="radio" name="q6" value="b">
-Your country
+Tuesday
 </label>
 
 <label>
 <input type="radio" name="q6" value="c">
-Your name
+Friday
 </label>
 
 </div>
@@ -1743,24 +2040,24 @@ Your name
 <div class="quiz-question">
 
 <p>
-7. What does "nationality" mean?
+7. Complete: My birthday is ___ May.
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q7" value="a">
-Nacionalidade
+on
 </label>
 
 <label>
 <input type="radio" name="q7" value="b">
-Endereço
+in
 </label>
 
 <label>
 <input type="radio" name="q7" value="c">
-Número
+at
 </label>
 
 </div>
@@ -1771,24 +2068,24 @@ Número
 <div class="quiz-question">
 
 <p>
-8. Choose the correct sentence.
+8. Choose the correct question.
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q8" value="a">
-I live in Maputo.
+When is your English class?
 </label>
 
 <label>
 <input type="radio" name="q8" value="b">
-I lives in Maputo.
+When your English class?
 </label>
 
 <label>
 <input type="radio" name="q8" value="c">
-I living Maputo.
+What when your class?
 </label>
 
 </div>
@@ -1799,25 +2096,24 @@ I living Maputo.
 <div class="quiz-question">
 
 <p>
-9. What is the correct answer?
-Where do you live?
+9. What is "Wednesday"?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q9" value="a">
-I am eighteen.
+Quinta-feira
 </label>
 
 <label>
 <input type="radio" name="q9" value="b">
-I live in Maputo.
+Quarta-feira
 </label>
 
 <label>
 <input type="radio" name="q9" value="c">
-I am Mozambican.
+Terça-feira
 </label>
 
 </div>
@@ -1828,24 +2124,24 @@ I am Mozambican.
 <div class="quiz-question">
 
 <p>
-10. Choose the correct sentence.
+10. What is "December"?
 </p>
 
 <div class="quiz-options">
 
 <label>
 <input type="radio" name="q10" value="a">
-I am Mozambican.
+Dezembro
 </label>
 
 <label>
 <input type="radio" name="q10" value="b">
-I am Mozambique.
+Novembro
 </label>
 
 <label>
 <input type="radio" name="q10" value="c">
-I Mozambican am.
+Outubro
 </label>
 
 </div>
@@ -1864,7 +2160,6 @@ onclick="submitQuiz()">
 
 </form>
 
-
 <div id="quizResult"></div>
 
 </section>
@@ -1875,49 +2170,49 @@ onclick="submitQuiz()">
 <h2>🔄 Daily Review</h2>
 
 <p>
-Review the most important points from Lesson 2.
+Review the most important points from Lesson 4.
 </p>
 
 <div class="review-list">
 
 <div class="review-item">
-🙋 <strong>Name</strong> = Nome
+📅 <strong>Monday</strong> = Segunda-feira
 </div>
 
 <div class="review-item">
-🎂 <strong>Age</strong> = Idade
+📅 <strong>Tuesday</strong> = Terça-feira
 </div>
 
 <div class="review-item">
-🌍 <strong>Country</strong> = País
+📅 <strong>Wednesday</strong> = Quarta-feira
 </div>
 
 <div class="review-item">
-🌎 <strong>Nationality</strong> = Nacionalidade
+📅 <strong>Thursday</strong> = Quinta-feira
 </div>
 
 <div class="review-item">
-🏙️ <strong>City</strong> = Cidade
+📅 <strong>Friday</strong> = Sexta-feira
 </div>
 
 <div class="review-item">
-🏠 <strong>Address</strong> = Endereço
+📅 <strong>Saturday</strong> = Sábado
 </div>
 
 <div class="review-item">
-📱 <strong>Phone number</strong> = Número de telefone
+📅 <strong>Sunday</strong> = Domingo
 </div>
 
 <div class="review-item">
-📧 <strong>Email</strong> = E-mail
+🗓️ <strong>January</strong> = Janeiro
 </div>
 
 <div class="review-item">
-🌍 <strong>I am from...</strong> = Eu sou de...
+🗓️ <strong>August</strong> = Agosto
 </div>
 
 <div class="review-item">
-🏠 <strong>I live in...</strong> = Eu moro em...
+🗓️ <strong>December</strong> = Dezembro
 </div>
 
 </div>
@@ -1927,42 +2222,34 @@ Review the most important points from Lesson 2.
 <h3>⭐ Key Sentences</h3>
 
 <p>
-My name is José.
+Today is Monday.
 </p>
 
 <p>
-I am twenty years old.
+Tomorrow is Tuesday.
 </p>
 
 <p>
-I am from Mozambique.
+Yesterday was Sunday.
 </p>
 
 <p>
-I am Mozambican.
+My birthday is in December.
 </p>
 
 <p>
-I live in Maputo.
+My English class is on Wednesday.
 </p>
 
 <p>
-How old are you?
-</p>
-
-<p>
-Where do you live?
-</p>
-
-<p>
-What is your nationality?
+When is your English class?
 </p>
 
 <br>
 
 <button
 class="listen-btn"
-onclick="speak('My name is José. I am twenty years old. I am from Mozambique. I am Mozambican. I live in Maputo. How old are you? Where do you live? What is your nationality?')">
+onclick="speak('Today is Monday. Tomorrow is Tuesday. Yesterday was Sunday. My birthday is in December. My English class is on Wednesday. When is your English class?')">
 
 🔊 Listen
 
@@ -1974,7 +2261,7 @@ onclick="speak('My name is José. I am twenty years old. I am from Mozambique. I
 <section class="card complete-box">
 
 <h2>
-🏆 Lesson 2 Complete
+🏆 Lesson 4 Complete
 </h2>
 
 <p>
@@ -1986,13 +2273,13 @@ Save your lesson progress.
 class="complete-btn"
 onclick="completeLesson()">
 
-✅ Complete Lesson 2
+✅ Complete Lesson 4
 
 </button>
 
 <div id="completeMessage">
 
-🎉 Lesson 2 completed successfully!
+🎉 Lesson 4 completed successfully!
 
 </div>
 
@@ -2001,11 +2288,11 @@ onclick="completeLesson()">
 
 <div class="page-navigation">
 
-<a href="lesson1.html">
+<a href="lesson3.html">
 ← Previous Lesson
 </a>
 
-<a href="lesson3.html">
+<a href="lesson5.html">
 Next Lesson →
 </a>
 
@@ -2029,7 +2316,7 @@ Speak English with Confidence
 </p>
 
 <p>
-Day 2 / Lesson 2
+Day 4 / Lesson 4
 </p>
 
 </footer>
@@ -2054,9 +2341,7 @@ function speak(text){
         new SpeechSynthesisUtterance(text);
 
     speech.lang="en-US";
-
     speech.rate=0.88;
-
     speech.pitch=1;
 
     window.speechSynthesis.speak(speech);
@@ -2067,50 +2352,42 @@ function speakConversation(){
 
     speak(
 
-        "José: Hello! What's your name? " +
+        "José: Hi, Maria! What day is it today? " +
 
-        "Maria: Hi! My name is Maria. What's your name? " +
+        "Maria: Today is Monday. " +
 
-        "José: My name is José. Nice to meet you. " +
+        "José: Oh, really? What month is it? " +
 
-        "Maria: Nice to meet you too. " +
+        "Maria: It is August. " +
 
-        "José: Where are you from? " +
+        "José: When is your birthday? " +
 
-        "Maria: I am from Mozambique. " +
+        "Maria: My birthday is in December. " +
 
-        "José: Where do you live? " +
+        "José: That's nice! What day is your birthday? " +
 
-        "Maria: I live in Maputo. " +
+        "Maria: It is on Friday this year. " +
 
-        "José: How old are you? " +
+        "José: Great! Are you having a party? " +
 
-        "Maria: I am eighteen years old. How old are you? " +
+        "Maria: Yes, I am. " +
 
-        "José: I am twenty years old. " +
+        "José: What day is your English class? " +
 
-        "Maria: What is your nationality? " +
+        "Maria: My English class is on Wednesday. " +
 
-        "José: I am Mozambican. " +
+        "José: Excellent! See you on Wednesday. " +
 
-        "Maria: That's great! " +
-
-        "José: It was nice talking to you. " +
-
-        "Maria: Nice talking to you too. See you later!"
+        "Maria: See you!"
 
     );
 
 }
 
 
-function checkAnswer(
-    button,
-    correct,
-    answerId
-){
+function checkAnswer(correct,answerId){
 
-    const answer =
+    const answer=
         document.getElementById(answerId);
 
     answer.style.display="block";
@@ -2146,12 +2423,12 @@ function submitQuiz(){
     const answers={
 
         q1:"a",
-        q2:"a",
+        q2:"b",
         q3:"a",
-        q4:"b",
+        q4:"c",
         q5:"a",
-        q6:"a",
-        q7:"a",
+        q6:"b",
+        q7:"b",
         q8:"a",
         q9:"b",
         q10:"a"
@@ -2160,9 +2437,7 @@ function submitQuiz(){
 
     let score=0;
 
-    for(
-        let question in answers
-    ){
+    for(let question in answers){
 
         const selected=
             document.querySelector(
@@ -2183,13 +2458,10 @@ function submitQuiz(){
 
     }
 
-    const percentage=
-        score*10;
+    const percentage=score*10;
 
     const result=
-        document.getElementById(
-            "quizResult"
-        );
+        document.getElementById("quizResult");
 
     result.style.display="block";
 
@@ -2209,7 +2481,7 @@ function submitQuiz(){
         );
 
     localStorage.setItem(
-        "lesson2Score",
+        "lesson4Score",
         percentage
     );
 
@@ -2232,11 +2504,9 @@ function completeLesson(){
             )
         ) || [];
 
-    if(
-        !completed.includes(2)
-    ){
+    if(!completed.includes(4)){
 
-        completed.push(2);
+        completed.push(4);
 
     }
 
@@ -2260,7 +2530,7 @@ function updateProgress(){
         ) || [];
 
     const isComplete=
-        completed.includes(2);
+        completed.includes(4);
 
     const percentage=
         isComplete ? 100 : 0;
@@ -2285,7 +2555,11 @@ window.addEventListener(
     "beforeunload",
     function(){
 
-        window.speechSynthesis.cancel();
+        if("speechSynthesis" in window){
+
+            window.speechSynthesis.cancel();
+
+        }
 
     }
 );

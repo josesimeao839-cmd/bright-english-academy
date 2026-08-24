@@ -3,205 +3,712 @@
 
 <head>
 
-    <link rel="icon" type="image/png" href="logo.png">
-
     <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <meta name="google-site-verification"
-          content="b0U8e1VQ_uiC8U3adajL7qP7FSpuD-SsK0isvHvMrqo">
-
     <meta name="description"
-          content="Bright English Academy - Learn English with structured lessons, vocabulary, grammar, pronunciation and practical exercises.">
+          content="Bright English Academy - Learn English with confidence through structured lessons, exercises, quizzes and assessments.">
 
-    <meta name="keywords"
-          content="Bright English Academy, Learn English, English course, Beginner English, A1 English">
-
-    <meta name="author"
-          content="José Vilanculos">
-
-    <!-- Private pages should not appear in Google search -->
-    <meta name="robots"
-          content="index, follow">
-
-    <title>Bright English Academy | Learn English with Confidence</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Bright English Academy</title>
 
     <style>
 
-        .home-container {
-            max-width: 1100px;
-            margin: auto;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .welcome-card {
-            background: white;
-            padding: 35px;
-            margin: 25px 0;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-            text-align: center;
+        html {
+            scroll-behavior: smooth;
         }
 
-        .welcome-card h2 {
-            color: #0b4f9c;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f8ff;
+            color: #17233c;
+            line-height: 1.6;
         }
 
-        .courses-grid {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
+        /* =========================
+           NAVIGATION
+        ========================== */
 
-        .course-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
 
-        .course-card h3 {
-            color: #0b4f9c;
-        }
-
-        .course-card p {
-            line-height: 1.7;
-        }
-
-        .academy-info {
-            background: #f5f9ff;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 25px;
-        }
-
-        .contact-box {
-            background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
-        }
-
-        .account-box {
-            background: linear-gradient(
-                135deg,
-                #0b4f9c,
-                #1d78d4
-            );
-
-            color: white;
-
-            padding: 40px;
-
-            border-radius: 18px;
-
-            margin-top: 30px;
-
-            text-align: center;
+            background: rgba(255,255,255,.96);
 
             box-shadow:
-                0 8px 25px
-                rgba(0,0,0,0.15);
+                0 3px 18px rgba(0,0,0,.08);
+
+            backdrop-filter: blur(10px);
         }
 
-        .account-box h2 {
-            margin-top: 0;
-        }
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
 
-        .account-buttons {
             display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 25px;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 15px 20px;
         }
 
-        .account-button {
-            display: inline-block;
-
-            padding: 13px 22px;
-
-            border-radius: 8px;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
 
             text-decoration: none;
+            color: #0757c9;
 
-            font-weight: bold;
+            font-size: 20px;
+            font-weight: 800;
         }
 
-        .login-button {
-            background: white;
-            color: #0b4f9c;
-        }
+        .logo-icon {
+            width: 42px;
+            height: 42px;
 
-        .register-button {
-            background: #ffd43b;
-            color: #222;
-        }
-
-        .account-button:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
-        }
-
-        .course-card .button {
-            display: inline-block;
-            margin-top: 10px;
-        }
-
-        .quick-links {
-            display: grid;
-
-            grid-template-columns:
-                repeat(auto-fit, minmax(180px, 1fr));
-
-            gap: 15px;
-
-            margin-top: 30px;
-        }
-
-        .quick-link {
-            display: block;
-
-            background: white;
-
-            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             border-radius: 12px;
 
-            text-align: center;
+            background:
+                linear-gradient(
+                    135deg,
+                    #0757c9,
+                    #13a6e8
+                );
 
+            color: white;
+
+            font-size: 22px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-links a {
             text-decoration: none;
+            color: #17233c;
+            font-weight: 600;
+        }
 
-            color: #0b4f9c;
+        .nav-links a:hover {
+            color: #0757c9;
+        }
+
+        .visitor-btn {
+            padding: 10px 18px;
+
+            border-radius: 25px;
+
+            background: #e8f5ff;
+
+            color: #0757c9 !important;
+
+            border: 1px solid #c9e5ff;
+        }
+
+        .visitor-btn:hover {
+            background: #0757c9;
+            color: white !important;
+        }
+
+        .login-btn {
+            padding: 10px 18px;
+
+            border-radius: 25px;
+
+            background: #0757c9;
+            color: white !important;
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 620px;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(19,166,232,.35),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #eef7ff,
+                    #ffffff
+                );
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            width: 100%;
+
+            margin: auto;
+
+            padding: 70px 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.2fr .8fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-block;
+
+            padding: 8px 16px;
+
+            border-radius: 30px;
+
+            background: #e4f3ff;
+
+            color: #0757c9;
 
             font-weight: bold;
 
-            box-shadow:
-                0 5px 15px
-                rgba(0,0,0,0.08);
+            margin-bottom: 20px;
         }
 
-        .quick-link:hover {
+        .hero h1 {
+            font-size:
+                clamp(42px, 6vw, 70px);
+
+            line-height: 1.05;
+
+            margin-bottom: 20px;
+
+            color: #12213c;
+        }
+
+        .hero h1 span {
+            color: #0757c9;
+        }
+
+        .hero p {
+            font-size: 19px;
+
+            max-width: 650px;
+
+            color: #52627a;
+
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            border-radius: 10px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: .25s;
+        }
+
+        .btn-primary {
+            background:
+                linear-gradient(
+                    135deg,
+                    #0757c9,
+                    #13a6e8
+                );
+
+            color: white;
+
+            box-shadow:
+                0 8px 20px
+                rgba(7,87,201,.22);
+        }
+
+        .btn-primary:hover {
             transform: translateY(-2px);
         }
 
-        @media (max-width: 600px) {
+        .btn-secondary {
+            background: white;
 
-            .account-box {
-                padding: 30px 20px;
+            color: #0757c9;
+
+            border: 2px solid #0757c9;
+        }
+
+        .btn-secondary:hover {
+            background: #0757c9;
+            color: white;
+        }
+
+        /* =========================
+           HERO CARD
+        ========================== */
+
+        .hero-card {
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 35px;
+
+            box-shadow:
+                0 20px 50px
+                rgba(20,53,100,.12);
+
+            border: 1px solid #e4ebf5;
+        }
+
+        .hero-card-icon {
+            width: 80px;
+            height: 80px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 20px;
+
+            background: #e8f5ff;
+
+            font-size: 40px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-card h2 {
+            color: #0757c9;
+
+            margin-bottom: 10px;
+        }
+
+        .course-line {
+            display: flex;
+
+            justify-content: space-between;
+
+            padding: 12px 0;
+
+            border-bottom:
+                1px solid #edf1f7;
+        }
+
+        /* =========================
+           STATS
+        ========================== */
+
+        .stats {
+            background: #0757c9;
+            color: white;
+        }
+
+        .stats-container {
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding: 35px 20px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4,1fr);
+
+            gap: 20px;
+
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 32px;
+        }
+
+        .stat p {
+            opacity: .85;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section.content-section {
+            max-width: 1200px;
+
+            margin: auto;
+
+            padding: 80px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+
+            margin-bottom: 45px;
+        }
+
+        .section-heading span {
+            color: #0757c9;
+
+            font-weight: bold;
+        }
+
+        .section-heading h2 {
+            font-size: 38px;
+
+            margin: 8px 0;
+        }
+
+        .section-heading p {
+            color: #64748b;
+
+            max-width: 650px;
+
+            margin: auto;
+        }
+
+        /* =========================
+           FEATURES
+        ========================== */
+
+        .features {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap: 22px;
+        }
+
+        .feature-card {
+            background: white;
+
+            padding: 28px;
+
+            border-radius: 18px;
+
+            border: 1px solid #e2e8f1;
+
+            box-shadow:
+                0 8px 25px
+                rgba(20,53,100,.06);
+
+            transition: .25s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(20,53,100,.10);
+        }
+
+        .feature-icon {
+            font-size: 35px;
+
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 8px;
+
+            color: #0757c9;
+        }
+
+        .feature-card p {
+            color: #65748b;
+        }
+
+        /* =========================
+           COURSE
+        ========================== */
+
+        .course-card {
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 35px;
+
+            border: 1px solid #e0e7f1;
+
+            box-shadow:
+                0 10px 35px
+                rgba(20,53,100,.07);
+
+            display: grid;
+
+            grid-template-columns:
+                1fr auto;
+
+            gap: 30px;
+
+            align-items: center;
+        }
+
+        .course-card h3 {
+            color: #0757c9;
+
+            font-size: 27px;
+
+            margin-bottom: 8px;
+        }
+
+        .course-details {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+
+            margin-top: 18px;
+        }
+
+        .course-tag {
+            background: #eef6ff;
+
+            color: #0757c9;
+
+            padding: 7px 12px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+
+            font-weight: bold;
+        }
+
+        /* =========================
+           STUDENT / TEACHER
+        ========================== */
+
+        .portal-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2,1fr);
+
+            gap: 25px;
+        }
+
+        .portal-card {
+            padding: 35px;
+
+            border-radius: 20px;
+
+            background: white;
+
+            border: 1px solid #e2e8f1;
+
+            box-shadow:
+                0 8px 30px
+                rgba(20,53,100,.07);
+        }
+
+        .portal-card.student {
+            border-top: 5px solid #0757c9;
+        }
+
+        .portal-card.teacher {
+            border-top: 5px solid #13a6e8;
+        }
+
+        .portal-card h3 {
+            font-size: 25px;
+
+            margin-bottom: 10px;
+        }
+
+        .portal-card p {
+            color: #64748b;
+
+            margin-bottom: 20px;
+        }
+
+        .portal-list {
+            list-style: none;
+
+            margin-bottom: 25px;
+        }
+
+        .portal-list li {
+            padding: 7px 0;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            max-width: 1160px;
+
+            margin: 40px auto 80px;
+
+            padding: 60px 25px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0757c9,
+                    #13a6e8
+                );
+
+            box-shadow:
+                0 20px 45px
+                rgba(7,87,201,.2);
+        }
+
+        .cta h2 {
+            font-size: 38px;
+
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 650px;
+
+            margin: 0 auto 25px;
+
+            opacity: .9;
+        }
+
+        .cta .btn {
+            background: white;
+
+            color: #0757c9;
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #17233c;
+
+            color: white;
+
+            padding: 45px 20px;
+
+            text-align: center;
+        }
+
+        footer h3 {
+            color: #58c7ff;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            opacity: .8;
+        }
+
+        .creator {
+            margin-top: 15px;
+
+            font-weight: bold;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
+        @media(max-width:850px){
+
+            .nav-links {
+                display: none;
             }
 
-            .account-buttons {
-                flex-direction: column;
+            .hero-container {
+                grid-template-columns: 1fr;
+
+                text-align: center;
             }
 
-            .account-button {
-                width: 100%;
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .stats-container {
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .course-card {
+                grid-template-columns: 1fr;
+
+                text-align: center;
+            }
+
+            .portal-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media(max-width:500px){
+
+            .hero {
+                min-height: auto;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat h2 {
+                font-size: 25px;
+            }
+
+            section.content-section {
+                padding: 55px 18px;
+            }
+
+            .section-heading h2 {
+                font-size: 30px;
             }
 
         }
@@ -214,448 +721,706 @@
 <body>
 
 
-<!-- HEADER -->
+<!-- =========================
+     NAVIGATION
+========================== -->
 
-<header>
+<nav>
 
-    <div class="logo">
-        Bright English Academy
+    <div class="nav-container">
+
+        <a href="index.html"
+           class="logo">
+
+            <span class="logo-icon">
+                📚
+            </span>
+
+            Bright English Academy
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#courses">
+                Courses
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="visitor.html"
+               class="visitor-btn">
+
+                🌍 Visitor
+
+            </a>
+
+            <a href="student-login.html"
+               class="login-btn">
+
+                Student Login
+
+            </a>
+
+        </div>
+
     </div>
 
-    <nav>
+</nav>
 
-        <a href="index.html">
-            Home
-        </a>
 
-        <a href="#courses">
-            Courses
-        </a>
+<!-- =========================
+     HERO
+========================== -->
 
-        <a href="about.html">
-            About
-        </a>
+<header class="hero"
+        id="home">
 
-        <a href="#contact">
-            Contact
-        </a>
+    <div class="hero-container">
 
-        <a href="login.html">
-            Login
-        </a>
 
-        <a href="register.html">
-            Create Account
-        </a>
+        <div>
 
-    </nav>
+            <div class="hero-badge">
+                🎓 Online English Learning
+            </div>
+
+
+            <h1>
+
+                Learn English.
+                <span>
+                    Speak with Confidence.
+                </span>
+
+            </h1>
+
+
+            <p>
+
+                Welcome to Bright English Academy,
+                a structured English learning platform
+                designed to help students build vocabulary,
+                grammar, pronunciation, speaking and
+                real-life communication skills.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+                <a href="student-register.html"
+                   class="btn btn-primary">
+
+                    🚀 Start Learning
+
+                </a>
+
+
+                <a href="visitor.html"
+                   class="btn btn-secondary">
+
+                    🌍 Continue as Visitor
+
+                </a>
+
+
+                <a href="#courses"
+                   class="btn btn-secondary">
+
+                    📚 Explore Course
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="hero-card-icon">
+                🇬🇧
+            </div>
+
+
+            <h2>
+                English Beginner A1
+            </h2>
+
+
+            <p>
+                Your complete 30-lesson
+                English foundation course.
+            </p>
+
+
+            <div class="course-line">
+
+                <span>
+                    📚 Lessons
+                </span>
+
+                <strong>
+                    30
+                </strong>
+
+            </div>
+
+
+            <div class="course-line">
+
+                <span>
+                    📝 Exercises
+                </span>
+
+                <strong>
+                    Included
+                </strong>
+
+            </div>
+
+
+            <div class="course-line">
+
+                <span>
+                    🎯 Quizzes
+                </span>
+
+                <strong>
+                    Included
+                </strong>
+
+            </div>
+
+
+            <div class="course-line">
+
+                <span>
+                    🏆 Final Test
+                </span>
+
+                <strong>
+                    30 min
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     STATS
+========================== -->
 
-<section id="home" class="hero">
+<div class="stats">
 
-    <div>
-
-        <h1>
-            Bright English Academy
-        </h1>
-
-        <h2>
-            Speak English with Confidence
-        </h2>
-
-        <p>
-            Learn English in a simple, practical
-            and engaging way.
-        </p>
-
-        <br>
-
-        <a href="#courses"
-           class="button">
-
-            Explore Courses
-
-        </a>
-
-    </div>
-
-</section>
+    <div class="stats-container">
 
 
-<!-- WELCOME -->
+        <div class="stat">
 
-<section class="section">
+            <h2>
+                30
+            </h2>
 
-<div class="home-container">
-
-    <div class="welcome-card">
-
-        <h2>
-            👋 Welcome to Bright English Academy
-        </h2>
-
-        <p>
-
-            Welcome to your English learning journey!
-
-            Bright English Academy provides structured
-            lessons designed to help learners build
-            vocabulary, grammar, pronunciation and
-            communication skills.
-
-        </p>
-
-        <p>
-
-            Start learning today and develop your
-            confidence step by step.
-
-        </p>
-
-    </div>
-
-
-    <!-- ACCOUNT -->
-
-    <div class="account-box">
-
-        <h2>
-            🎓 Start Your Learning Journey
-        </h2>
-
-        <p>
-            Create your student account or log in
-            to access your learning area.
-        </p>
-
-        <div class="account-buttons">
-
-            <a href="login.html"
-               class="account-button login-button">
-
-                🔐 Student Login
-
-            </a>
-
-            <a href="register.html"
-               class="account-button register-button">
-
-                📝 Create Account
-
-            </a>
+            <p>
+                Lessons
+            </p>
 
         </div>
+
+
+        <div class="stat">
+
+            <h2>
+                A1
+            </h2>
+
+            <p>
+                Beginner Level
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>
+                🎧
+            </h2>
+
+            <p>
+                Audio Practice
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>
+                🏆
+            </h2>
+
+            <p>
+                Final Assessment
+            </p>
+
+        </div>
+
 
     </div>
 
 </div>
 
-</section>
+
+<!-- =========================
+     FEATURES
+========================== -->
+
+<section class="content-section"
+         id="about">
 
 
-<!-- COURSES -->
+    <div class="section-heading">
 
-<section id="courses"
-         class="section">
+        <span>
+            WHY BRIGHT ENGLISH ACADEMY?
+        </span>
 
-<div class="home-container">
+        <h2>
+            Learn English Step by Step
+        </h2>
 
-    <h2>
-        📚 Our Courses
-    </h2>
+        <p>
+            Everything students need to build
+            a strong English foundation.
+        </p>
+
+    </div>
 
 
-    <div class="courses-grid">
+    <div class="features">
 
 
-        <!-- BEGINNER 1 -->
+        <div class="feature-card">
 
-        <div class="course-card">
+            <div class="feature-icon">
+                📚
+            </div>
 
             <h3>
-                🌱 Beginner 1 — A1
+                Structured Lessons
             </h3>
 
             <p>
-
-                Start your English journey with
-                essential vocabulary, grammar,
-                pronunciation and communication.
-
+                Follow a clear sequence of
+                30 lessons designed for A1
+                English learners.
             </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🎧
+            </div>
+
+            <h3>
+                Pronunciation & Audio
+            </h3>
 
             <p>
-
-                This course includes structured
-                lessons, dialogues, reading,
-                writing, speaking and quizzes.
-
+                Listen to English words,
+                phrases and conversations
+                while practicing pronunciation.
             </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                ✏️
+            </div>
+
+            <h3>
+                Exercises
+            </h3>
+
+            <p>
+                Practice grammar, vocabulary,
+                reading, writing and everyday
+                English.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🧩
+            </div>
+
+            <h3>
+                Interactive Activities
+            </h3>
+
+            <p>
+                Learn through activities,
+                challenges and practical
+                English situations.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📊
+            </div>
+
+            <h3>
+                Progress Tracking
+            </h3>
+
+            <p>
+                Students can follow their
+                learning progress and results.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                🏆
+            </div>
+
+            <h3>
+                Final Assessment
+            </h3>
+
+            <p>
+                Complete the final timed test
+                and measure your A1 English
+                knowledge.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     COURSE
+========================== -->
+
+<section class="content-section"
+         id="courses">
+
+
+    <div class="section-heading">
+
+        <span>
+            OUR COURSE
+        </span>
+
+        <h2>
+            English Beginner A1
+        </h2>
+
+        <p>
+            Start your English journey with
+            a complete 30-day learning program.
+        </p>
+
+    </div>
+
+
+    <div class="course-card">
+
+
+        <div>
+
+            <h3>
+                🇬🇧 Beginner A1 English
+            </h3>
+
+            <p>
+                A complete beginner course covering
+                essential vocabulary, grammar,
+                pronunciation, conversations,
+                exercises and assessments.
+            </p>
+
+
+            <div class="course-details">
+
+                <span class="course-tag">
+                    30 Lessons
+                </span>
+
+                <span class="course-tag">
+                    Vocabulary
+                </span>
+
+                <span class="course-tag">
+                    Grammar
+                </span>
+
+                <span class="course-tag">
+                    Speaking
+                </span>
+
+                <span class="course-tag">
+                    Writing
+                </span>
+
+                <span class="course-tag">
+                    Audio
+                </span>
+
+                <span class="course-tag">
+                    Quizzes
+                </span>
+
+                <span class="course-tag">
+                    Final Test
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div>
 
             <a href="beginner-a1.html"
-               class="button">
+               class="btn btn-primary">
 
-                Start Beginner 1
+                📖 View Course
 
             </a>
 
         </div>
 
 
-        <!-- BEGINNER 2 -->
-
-        <div class="course-card">
-
-            <h3>
-                🌿 Beginner 2 — A2
-            </h3>
-
-            <p>
-
-                Continue developing your English
-                skills with more vocabulary,
-                grammar and everyday communication.
-
-            </p>
-
-            <p>
-
-                This level will be added as the
-                academy continues to grow.
-
-            </p>
-
-            <button disabled>
-                Coming Soon
-            </button>
-
-        </div>
-
-
-        <!-- INTERMEDIATE 1 -->
-
-        <div class="course-card">
-
-            <h3>
-                🚀 Intermediate 1 — B1
-            </h3>
-
-            <p>
-
-                Improve your English communication,
-                reading, writing and speaking skills.
-
-            </p>
-
-            <p>
-
-                This level will be available
-                in the future.
-
-            </p>
-
-            <button disabled>
-                Coming Soon
-            </button>
-
-        </div>
-
-
-        <!-- INTERMEDIATE 2 -->
-
-        <div class="course-card">
-
-            <h3>
-                ⭐ Intermediate 2 — B2
-            </h3>
-
-            <p>
-
-                Develop greater confidence and
-                fluency in English communication.
-
-            </p>
-
-            <p>
-
-                This level will be available
-                in the future.
-
-            </p>
-
-            <button disabled>
-                Coming Soon
-            </button>
-
-        </div>
-
-
     </div>
-
-
-    <!-- QUICK LINKS -->
-
-    <div class="quick-links">
-
-        <a href="beginner-a1.html"
-           class="quick-link">
-
-            📖 Beginner A1
-
-        </a>
-
-
-        <a href="login.html"
-           class="quick-link">
-
-            🔐 Login
-
-        </a>
-
-
-        <a href="register.html"
-           class="quick-link">
-
-            📝 Create Account
-
-        </a>
-
-
-        <a href="about.html"
-           class="quick-link">
-
-            👨‍🏫 About Academy
-
-        </a>
-
-
-        <a href="#contact"
-           class="quick-link">
-
-            📩 Contact
-
-        </a>
-
-    </div>
-
-</div>
 
 </section>
 
 
-<!-- ABOUT PREVIEW -->
+<!-- =========================
+     PORTALS
+========================== -->
 
-<section class="section">
+<section class="content-section">
 
-<div class="home-container">
 
-    <div class="academy-info">
+    <div class="section-heading">
+
+        <span>
+            LEARNING PLATFORM
+        </span>
 
         <h2>
-            👨‍🏫 About the Academy
+            Student & Teacher Areas
         </h2>
 
         <p>
-
-            Bright English Academy is an English
-            learning project created by
-            <strong>José Vilanculos</strong>.
-
+            A dedicated space for students
+            and teachers.
         </p>
-
-        <p>
-
-            Our goal is to help learners develop
-            practical English skills and communicate
-            with confidence.
-
-        </p>
-
-        <a href="about.html"
-           class="button">
-
-            Learn More About Us
-
-        </a>
 
     </div>
 
-</div>
 
-</section>
+    <div class="portal-grid">
 
 
-<!-- CONTACT -->
+        <!-- STUDENT -->
 
-<section id="contact"
-         class="section">
+        <div class="portal-card student">
 
-<div class="home-container">
+            <h3>
+                👨‍🎓 Student Area
+            </h3>
 
-    <div class="contact-box">
+            <p>
+                Create your account and follow
+                your English learning journey.
+            </p>
 
-        <h2>
-            📩 Contact Bright English Academy
-        </h2>
 
-        <p>
-            We would love to hear from you.
-        </p>
+            <ul class="portal-list">
 
-        <p>
+                <li>
+                    ✅ Create an account
+                </li>
 
-            For information about our courses,
-            lessons and learning programs,
-            please contact us.
+                <li>
+                    ✅ Access your lessons
+                </li>
 
-        </p>
+                <li>
+                    ✅ Complete exercises
+                </li>
 
-        <p>
+                <li>
+                    ✅ Take quizzes
+                </li>
 
-            📧 <strong>Email:</strong>
+                <li>
+                    ✅ Track your progress
+                </li>
 
-            <a href="mailto:josesimeao839@gmail.com">
+                <li>
+                    ✅ Complete the final test
+                </li>
 
-                josesimeao839@gmail.com
+            </ul>
+
+
+            <a href="student-register.html"
+               class="btn btn-primary">
+
+                Create Student Account
 
             </a>
 
-        </p>
+        </div>
 
-        <br>
 
-        <a href="mailto:josesimeao839@gmail.com"
-           class="button">
+        <!-- TEACHER -->
 
-            📧 Send Us an Email
+        <div class="portal-card teacher">
 
-        </a>
+            <h3>
+                👨‍🏫 Teacher Area
+            </h3>
+
+            <p>
+                A future dashboard for managing
+                and evaluating your students.
+            </p>
+
+
+            <ul class="portal-list">
+
+                <li>
+                    📊 View student progress
+                </li>
+
+                <li>
+                    📝 View exercise results
+                </li>
+
+                <li>
+                    🎯 View quiz scores
+                </li>
+
+                <li>
+                    🏆 View final test results
+                </li>
+
+                <li>
+                    👥 Manage students
+                </li>
+
+                <li>
+                    📈 Analyze performance
+                </li>
+
+            </ul>
+
+
+            <a href="teacher-login.html"
+               class="btn btn-secondary">
+
+                Teacher Login
+
+            </a>
+
+        </div>
+
 
     </div>
-
-</div>
 
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     CTA
+========================== -->
+
+<div class="cta">
+
+    <h2>
+        Ready to Start Learning?
+    </h2>
+
+    <p>
+        Begin your English journey today
+        and build the confidence to communicate
+        in English.
+    </p>
+
+
+    <a href="student-register.html"
+       class="btn">
+
+        🚀 Create Your Account
+
+    </a>
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
 
 <footer>
 
-    <p>
-        © 2026 Bright English Academy
-    </p>
-
-    <p>
-        Created by <strong>José Vilanculos</strong>
-    </p>
+    <h3>
+        Bright English Academy
+    </h3>
 
     <p>
         Speak English with Confidence
+    </p>
+
+    <p class="creator">
+        👤 Created by José Simeão
+    </p>
+
+    <p style="margin-top:15px;font-size:13px;">
+
+        © 2026 Bright English Academy.
+        All rights reserved.
+
     </p>
 
 </footer>
